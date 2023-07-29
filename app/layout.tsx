@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 // components
-import { MuiNavBar } from "./components/mui-nav-bar";
+import { NavBar } from "./components/nav-bar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <MuiNavBar />
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
