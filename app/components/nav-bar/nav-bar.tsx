@@ -1,3 +1,6 @@
+// styles
+import styles from "./nav-bar.module.scss";
+
 // icons
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 
@@ -9,25 +12,35 @@ import {
   Button,
   Typography,
   Stack,
-  Box,
 } from "@mui/material";
 
 export const NavBar = () => {
   return (
-    <Box sx={{ marginBottom: "1rem" }}>
-      <AppBar position="static">
-        <Toolbar component="nav">
-          <IconButton
+    <AppBar position="static">
+      <Toolbar component="nav">
+        <Stack
+          direction="row"
+          sx={{
+            justifyContent: "space-around",
+            gap: "2rem",
+          }}
+        >
+          <Button
             size="large"
-            edge="start"
             color="inherit"
-            aria-label="logo"
+            sx={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              gap: "1rem",
+            }}
           >
             <LibraryMusicIcon />
-          </IconButton>
-          <Typography variant="h6" component="span" sx={{ flexGrow: 1 }}>
-            Soojin Music Academy
-          </Typography>
+            <Typography variant="h6" component="span">
+              Soojin Music Academy
+            </Typography>
+          </Button>
+
           <Stack direction="row" spacing={2}>
             <Button color="inherit" size="large">
               Home
@@ -42,8 +55,8 @@ export const NavBar = () => {
               Contact
             </Button>
           </Stack>
-        </Toolbar>
-      </AppBar>
-    </Box>
+        </Stack>
+      </Toolbar>
+    </AppBar>
   );
 };

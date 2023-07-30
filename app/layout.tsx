@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 
 // components
 import { NavBar } from "./components/nav-bar";
+import { Footer } from "./components/footer";
+import { Box } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +21,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

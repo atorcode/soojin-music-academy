@@ -1,3 +1,3 @@
-import { TestimonialsSection } from "./testiominals-section";
+import { TestimonialsSection } from "./testimonials-section";
 
 export { TestimonialsSection };
