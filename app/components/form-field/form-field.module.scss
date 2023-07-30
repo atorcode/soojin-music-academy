@@ -1,0 +1,32 @@
+@use "../../partials/variables" as v;
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.label {
+  position: absolute;
+  // left: 1rem;
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.field {
+  width: 35rem;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: v.$border-rounded;
+  background-color: pink;
+}
+
+.field-small {
+  height: 2.5rem;
+}
+
+.field-large {
+  height: 10rem;
+}

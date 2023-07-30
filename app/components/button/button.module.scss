@@ -1,0 +1,8 @@
+@use "../../partials/variables" as v;
+
+.button {
+  height: 2.5rem;
+  width: 7.5rem;
+  border: none;
+  border-radius: v.$border-rounded;
+}

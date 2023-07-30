@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.individual-grouping {
+  display: flex;
+  align-items: center;
+}

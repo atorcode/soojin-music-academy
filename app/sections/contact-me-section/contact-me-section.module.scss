@@ -3,3 +3,14 @@
 .section {
   padding-bottom: v.$section-vertical-padding;
 }
+
+.form-and-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
