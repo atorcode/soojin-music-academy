@@ -2,5 +2,9 @@
 import styles from "./testimonials-section.module.scss";
 
 export const TestimonialsSection = () => {
-  return <div>TestimonialsSection</div>;
+  return (
+    <section className={styles["section"]}>
+      <h2>Testimonials</h2>
+    </section>
+  );
 };

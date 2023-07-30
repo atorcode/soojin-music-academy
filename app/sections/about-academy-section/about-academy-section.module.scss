@@ -1,0 +1,9 @@
+@use "../../partials/variables" as v;
+
+.section {
+  padding: v.$section-vertical-padding 0;
+}
+
+.text-highlight {
+  color: blue;
+}

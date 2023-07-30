@@ -7,10 +7,10 @@ import { GiMusicalScore } from "react-icons/gi";
 export const NavBar = () => {
   return (
     <nav className={styles["nav"]}>
-      <span className={styles["brand"]}>
-        <GiMusicalScore />
-        <p>Soojin Music Academy</p>
-      </span>
+      <a href="#" className={styles["brand"]}>
+        <GiMusicalScore className={styles["logo"]} />
+        <span className={styles["business-name"]}>Soojin Music Academy</span>
+      </a>
       <span className={styles["links"]}>
         <a href="#">About</a>
         <a href="#">Accolades</a>

@@ -2,5 +2,9 @@
 import styles from "./resume-section.module.scss";
 
 export const ResumeSection = () => {
-  return <div>ResumeSection</div>;
+  return (
+    <section className={styles["section"]}>
+      <div>ResumeSection</div>
+    </section>
+  );
 };
