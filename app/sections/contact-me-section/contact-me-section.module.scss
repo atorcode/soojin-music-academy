@@ -1,11 +1,11 @@
 @use "../../partials/variables" as v;
 
 .section {
-  padding-bottom: v.$section-vertical-padding;
+  padding: v.$vertical-padding-section 0;
 }
 
 .heading {
-  padding-bottom: 0.8rem;
+  padding-bottom: v.$vertical-padding-section-heading;
 }
 
 .form-and-icons {

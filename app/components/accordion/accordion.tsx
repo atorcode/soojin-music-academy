@@ -1,3 +1,5 @@
+"use client";
+
 // icons
 import { PiCaretUpBold } from "react-icons/pi";
 import { PiCaretDownBold } from "react-icons/pi";
@@ -5,17 +7,32 @@ import { PiCaretDownBold } from "react-icons/pi";
 // styles
 import styles from "./accordion.module.scss";
 
-export const Accordion = () => {
+// hooks
+import { useState } from "react";
+
+export const Accordion = ({
+  title,
+  content,
+}: {
+  title: string;
+  content: string;
+}) => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   return (
     <div className={styles["accordion"]}>
-      <button className={styles["button"]}>
-        I'M AN ACCORDION!
+      <button
+        className={styles["button"]}
+        onClick={() => setIsExpanded((prev) => !prev)}
+      >
+        {title}
         <PiCaretDownBold />
       </button>
-      <p className={styles["content"]}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet
-        incidunt perspiciatis, eaque magnam pariatur unde explicabo nesciunt
-        reiciendis nihil?
+      <p
+        className={`${styles["content"]} ${
+          isExpanded && styles["content-expanded"]
+        }`}
+      >
+        {content}
       </p>
     </div>
   );

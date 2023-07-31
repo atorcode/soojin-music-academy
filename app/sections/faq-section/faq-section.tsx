@@ -7,7 +7,7 @@ import { AccordionGroup } from "@/app/components/accordion-group";
 export const FaqSection = () => {
   return (
     <section className={styles["section"]}>
-      <h2>Frequently Asked Questions</h2>
+      <h2 className={styles["heading"]}>Frequently Asked Questions</h2>
       <AccordionGroup />
     </section>
   );

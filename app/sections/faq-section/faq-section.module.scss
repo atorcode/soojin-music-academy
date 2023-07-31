@@ -1,5 +1,9 @@
 @use "../../partials/variables" as v;
 
 .section {
-  padding-bottom: v.$section-vertical-padding;
+  padding-bottom: v.$vertical-padding-section;
+}
+
+.heading {
+  padding-bottom: v.$vertical-padding-section-heading;
 }
