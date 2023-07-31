@@ -1,27 +1,61 @@
+"use client";
+
+// styles
 import styles from "./form-field.module.scss";
+import { Roboto } from "next/font/google";
+
+// hooks
+import { useState } from "react";
+
+const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const FormField = ({
-  type = "field",
+  type = "input",
   id,
 }: {
-  type?: "field" | "textarea";
+  type?: "input" | "textarea";
   id: string;
 }) => {
+  const [inputValue, setInputValue] = useState<string>("");
+  const [isLabelLifted, setIsLabelLifted] = useState<boolean>(false);
   return (
     <div className={styles["container"]}>
-      <label htmlFor={id} className={styles["label"]}>
+      <label
+        htmlFor={id}
+        className={`${styles["label"]} ${styles[`label-${type}`]} ${
+          isLabelLifted && styles["label-active"]
+        }`}
+      >
         {id}
       </label>
-      {type === "field" ? (
+      {type === "input" ? (
         <input
-          type="field"
+          type="input"
           id={id}
-          className={`${styles["field"]} ${styles["field-small"]}`}
+          autoComplete="off"
+          className={`${styles["field"]} ${styles["field-input"]} ${roboto.className}`}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          onFocus={() => {
+            setIsLabelLifted(true);
+          }}
+          onBlur={() => {
+            setIsLabelLifted(inputValue !== "");
+          }}
         />
       ) : (
         <textarea
           id={id}
-          className={`${styles["field"]} ${styles["field-large"]}`}
+          autoComplete="off"
+          className={`${styles["field"]} ${styles["field-textarea"]} ${roboto.className}`}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          onFocus={() => {
+            setIsLabelLifted(true);
+          }}
+          onBlur={() => {
+            setIsLabelLifted(inputValue !== "");
+          }}
         ></textarea>
       )}
     </div>

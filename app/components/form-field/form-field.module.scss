@@ -9,24 +9,44 @@
 
 .label {
   position: absolute;
-  // left: 1rem;
+  left: 1rem;
   color: gray;
   font-size: 1.1rem;
+  cursor: text;
+  user-select: none;
+  transform: translateY(-50%);
+  transition: top 100ms ease, font-size 100ms ease;
+}
+
+.label-input {
+  top: 50%;
+}
+
+.label-textarea {
+  top: 9%;
+}
+
+.label-active {
+  font-size: 0.8rem;
+  top: 0.8rem;
 }
 
 .field {
   width: 35rem;
   font-size: 1.1rem;
+  padding: 1.1rem 1rem 0rem 1rem;
   outline: none;
   border: none;
   border-radius: v.$border-rounded;
   background-color: pink;
 }
 
-.field-small {
-  height: 2.5rem;
+.field-input {
+  height: 3rem;
 }
 
-.field-large {
-  height: 10rem;
+.field-textarea {
+  height: 15rem;
+  padding: 1.4rem 1rem 0 1rem;
+  resize: none;
 }
