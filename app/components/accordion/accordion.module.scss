@@ -1,0 +1,26 @@
+@use "../../partials/variables" as v;
+
+.accordion {
+  width: 35rem;
+  background-color: pink;
+  border-radius: v.$border-rounded;
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: pink;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.content {
+  position: relative;
+  padding: 0 1rem 1rem 1rem;
+}
