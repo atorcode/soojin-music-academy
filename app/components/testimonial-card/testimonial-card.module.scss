@@ -1,0 +1,35 @@
+@use "../../partials/variables" as v;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 16rem;
+  width: 32rem;
+  padding: 2rem;
+  border-radius: v.$border-rounded;
+  background-color: pink;
+}
+
+.header-and-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+}
+
+.name {
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+
+.personal-title {
+  color: darkblue;
+}
+
+.rating {
+  padding-top: 0.5rem;
+}

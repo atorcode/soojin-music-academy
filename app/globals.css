@@ -21,3 +21,10 @@ ul,
 ol {
   list-style: none;
 }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

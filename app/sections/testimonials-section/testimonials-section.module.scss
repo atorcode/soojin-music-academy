@@ -1,5 +1,7 @@
 @use "../../partials/variables" as v;
 
 .section {
+  display: flex;
+  gap: 2rem;
   padding-bottom: v.$vertical-padding-section;
 }

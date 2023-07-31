@@ -1,0 +1,29 @@
+// styles
+import styles from "./testimonial-card.module.scss";
+
+// components
+import { Avatar } from "../avatar";
+import { StarRating } from "../star-rating/star-rating";
+
+export const TestimonialCard = () => {
+  return (
+    <article className={styles["card"]}>
+      <div className={styles["header-and-rating"]}>
+        <div className={styles["header"]}>
+          <Avatar />
+          <div>
+            <p className={styles["name"]}>John Doe</p>
+            <p className={styles["personal-title"]}>Student: 7 years</p>
+          </div>
+        </div>
+        <div className={styles["rating"]}>
+          <StarRating rating={4.5} />
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cumque
+        est tempore dicta nihil id nulla natus ab totam corporis?
+      </p>
+    </article>
+  );
+};

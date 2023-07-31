@@ -2,12 +2,9 @@
 
 // styles
 import styles from "./form-field.module.scss";
-import { Roboto } from "next/font/google";
 
 // hooks
 import { useState } from "react";
-
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const FormField = ({
   type = "input",
@@ -33,7 +30,7 @@ export const FormField = ({
           type="input"
           id={id}
           autoComplete="off"
-          className={`${styles["field"]} ${styles["field-input"]} ${roboto.className}`}
+          className={`${styles["field"]} ${styles["field-input"]}`}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onFocus={() => {
@@ -47,7 +44,7 @@ export const FormField = ({
         <textarea
           id={id}
           autoComplete="off"
-          className={`${styles["field"]} ${styles["field-textarea"]} ${roboto.className}`}
+          className={`${styles["field"]} ${styles["field-textarea"]}`}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onFocus={() => {
