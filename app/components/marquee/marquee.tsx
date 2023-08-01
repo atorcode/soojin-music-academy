@@ -6,8 +6,17 @@ import { TestimonialCard } from "../testimonial-card";
 
 export const Marquee = () => {
   return (
-    <article>
-      <TestimonialCard />
+    <article className={styles["marquee-container"]}>
+      <article className={styles["marquee"]}>
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+
+        {/* duplicates for seamless looping */}
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+      </article>
     </article>
   );
 };

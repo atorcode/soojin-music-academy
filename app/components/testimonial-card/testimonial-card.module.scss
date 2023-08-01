@@ -9,6 +9,7 @@
   padding: 2rem;
   border-radius: v.$border-rounded;
   background-color: pink;
+  flex-shrink: 0;
 }
 
 .header-and-rating {
@@ -32,4 +33,12 @@
 
 .rating {
   padding-top: 0.5rem;
+}
+
+.quote-text {
+  padding: 0.25rem 1.75rem;
+}
+
+.quote-closed {
+  float: right;
 }

@@ -1,6 +1,9 @@
 // styles
 import styles from "./testimonial-card.module.scss";
 
+// icons
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+
 // components
 import { Avatar } from "../avatar";
 import { StarRating } from "../star-rating/star-rating";
@@ -8,7 +11,7 @@ import { StarRating } from "../star-rating/star-rating";
 export const TestimonialCard = () => {
   return (
     <article className={styles["card"]}>
-      <div className={styles["header-and-rating"]}>
+      <section className={styles["header-and-rating"]}>
         <div className={styles["header"]}>
           <Avatar />
           <div>
@@ -19,11 +22,15 @@ export const TestimonialCard = () => {
         <div className={styles["rating"]}>
           <StarRating rating={4.5} />
         </div>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cumque
-        est tempore dicta nihil id nulla natus ab totam corporis?
-      </p>
+      </section>
+      <section>
+        <FaQuoteLeft className={styles["quote-open"]} />
+        <p className={styles["quote-text"]}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cumque
+          est tempore dicta nihil id nulla natus ab totam corporis?
+        </p>
+        <FaQuoteRight className={styles["quote-closed"]} />
+      </section>
     </article>
   );
 };
