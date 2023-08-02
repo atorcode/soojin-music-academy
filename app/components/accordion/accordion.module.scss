@@ -16,8 +16,17 @@
   padding: 0 1rem;
   background-color: pink;
   border: none;
+  text-transform: none;
   cursor: pointer;
   user-select: none;
+}
+
+.icon {
+  transition: transform 300ms ease;
+}
+
+.icon-rotated {
+  transform: rotate(180deg);
 }
 
 .content {

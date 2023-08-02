@@ -1,7 +1,7 @@
 "use client";
 
 // icons
-import { PiCaretUpBold } from "react-icons/pi";
+// import { PiCaretUpBold } from "react-icons/pi";
 import { PiCaretDownBold } from "react-icons/pi";
 
 // styles
@@ -25,7 +25,12 @@ export const Accordion = ({
         onClick={() => setIsExpanded((prev) => !prev)}
       >
         {title}
-        <PiCaretDownBold />
+        {/* {isExpanded ? <PiCaretUpBold /> : <PiCaretDownBold />} */}
+        <PiCaretDownBold
+          className={`${styles["icon"]} ${
+            isExpanded && styles["icon-rotated"]
+          }`}
+        />
       </button>
       <p
         className={`${styles["content"]} ${
