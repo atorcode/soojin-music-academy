@@ -1,0 +1,27 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  // object-position: 0 -200px;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 8%;
+  transform: translate(0, -50%);
+  gap: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: white;
+  z-index: 10;
+}

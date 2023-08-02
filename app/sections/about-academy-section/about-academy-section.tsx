@@ -1,9 +1,15 @@
 // styles
 import styles from "./about-academy-section.module.scss";
 
+// components
+import Image from "next/image";
+
 export const AboutAcademySection = () => {
   return (
     <section className={styles["section"]}>
+      <div className={styles["image-container"]}>
+        <Image src="/p3.jpg" alt="" fill className={styles["image"]} />
+      </div>
       <h2>
         Discover your voice{" "}
         <span className={styles["text-highlight"]}>with us</span>
