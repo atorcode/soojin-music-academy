@@ -11,8 +11,9 @@ export const Marquee = () => {
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />
-
+        <TestimonialCard />
         {/* duplicates for seamless looping */}
+        <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />
