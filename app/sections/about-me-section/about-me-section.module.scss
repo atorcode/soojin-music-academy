@@ -1,11 +1,16 @@
 @use "../../partials/variables" as v;
 
 .section {
+  padding-bottom: v.$vertical-padding-section;
+  background-color: blue;
+}
+
+.content-wrapper {
   display: flex;
-  width: v.$section-width;
   gap: 2rem;
   align-items: center;
-  padding-bottom: v.$vertical-padding-section;
+  width: v.$content-width;
+  margin: auto;
 }
 
 .text {
@@ -21,7 +26,7 @@
   height: 600px;
   overflow: hidden;
   flex-shrink: 0;
-  border-radius: v.$border-rounded;
+  border-radius: v.$border-rounded-large;
 }
 
 // for p1 image

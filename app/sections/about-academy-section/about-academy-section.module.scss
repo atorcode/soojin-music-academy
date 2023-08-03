@@ -1,20 +1,27 @@
 @use "../../partials/variables" as v;
 
 .section {
-  width: v.$section-width;
   padding: v.$vertical-padding-section 0;
+  background-color: red;
+}
+
+.content-wrapper {
+  width: v.$content-width;
+  margin: auto;
 }
 
 .image-container {
   position: relative;
-  width: 800px;
-  height: 480px;
+  width: 780px;
+  height: 360px;
+  border-radius: v.$border-rounded-large;
   overflow: hidden;
 }
 
 .image {
   object-fit: cover;
-  // transform: translate(0%, 0%);
+  object-position: 0 -150px;
+  // transform: scale(1.2);
 }
 
 .text-highlight {

@@ -1,5 +1,15 @@
 @use "../../partials/variables" as v;
 
 .section {
+  width: 100%;
   padding-bottom: v.$vertical-padding-section;
+  background-color: violet;
+}
+
+.content-wrapper {
+  min-width: v.$content-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }

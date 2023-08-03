@@ -1,0 +1,9 @@
+@use "../../partials/variables" as v;
+
+.resume {
+  width: 1000px;
+  height: 1000px;
+  background-color: white;
+  color: black;
+  border-radius: v.$border-rounded-large;
+}

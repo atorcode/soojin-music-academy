@@ -1,8 +1,14 @@
 @use "../../partials/variables" as v;
 
 .section {
+  width: 100%;
   padding: v.$vertical-padding-section 0;
-  width: v.$section-width;
+  background-color: purple;
+}
+
+.content-wrapper {
+  width: v.$content-width;
+  margin: auto;
 }
 
 .heading {

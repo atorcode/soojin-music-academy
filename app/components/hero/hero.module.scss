@@ -21,7 +21,7 @@
 
 .heading {
   font-size: 2rem;
-  color: white;
+  color: rgb(192, 192, 192);
   opacity: 0;
   z-index: 10;
 
@@ -33,6 +33,7 @@
 }
 
 .delayed-text {
+  color: white;
   opacity: 0;
   transition: 1000ms 1000ms opacity ease;
 }
