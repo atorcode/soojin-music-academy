@@ -25,7 +25,7 @@ export const AboutMeSection = () => {
           layout="fill"
           className={styles["image"]}
         /> */}
-        <Image src="/p2.jpg" alt="" layout="fill" className={styles["image"]} />
+        <Image src="/p2.jpg" alt="" fill className={styles["image"]} />
       </div>
     </section>
   );

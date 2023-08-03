@@ -29,13 +29,13 @@ export const StarRating = ({ rating }: { rating: number }) => {
   };
   return (
     <div>
-      {mapRatingToStarsCount().map((starCount) => {
+      {mapRatingToStarsCount().map((starCount, index) => {
         if (starCount === "full") {
-          return <BsStarFill />;
+          return <BsStarFill key={index} />;
         } else if (starCount === "half") {
-          return <BsStarHalf />;
+          return <BsStarHalf key={index} />;
         } else {
-          return <BsStar />;
+          return <BsStar key={index} />;
         }
       })}
     </div>

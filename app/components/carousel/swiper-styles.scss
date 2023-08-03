@@ -1,0 +1,35 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+
+  &:hover {
+    cursor: grab;
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    opacity: 0.5 !important;
+    background: white !important;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+  }
+}
+
+.swiper-button-prev {
+  color: white !important;
+  &::after {
+    content: "";
+    font-size: 2rem !important;
+  }
+}
+
+.swiper-button-next {
+  color: white !important;
+
+  &::after {
+    content: "";
+    font-size: 2rem !important;
+  }
+}
