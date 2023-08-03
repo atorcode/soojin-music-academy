@@ -2,7 +2,7 @@
 
 .section {
   width: 100%;
-  padding: v.$vertical-padding-section 0;
+  padding: v.$vertical-spacing-section 0;
   background-color: purple;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .heading {
-  padding-bottom: v.$vertical-padding-section-heading;
+  padding-bottom: v.$vertical-spacing-section-heading;
 }
 
 .form-and-icons {

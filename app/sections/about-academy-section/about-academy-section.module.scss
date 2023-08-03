@@ -1,8 +1,12 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .section {
-  padding: v.$vertical-padding-section 0;
-  background-color: red;
+  width: 100%;
+  padding: v.$vertical-spacing-section 0;
+  background-image: url("/background-academy.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .content-wrapper {
@@ -10,20 +14,51 @@
   margin: auto;
 }
 
+.heading {
+  margin: 2rem 0 v.$vertical-spacing-section-heading 0;
+}
+
 .image-container {
   position: relative;
   width: 780px;
   height: 360px;
   border-radius: v.$border-rounded-large;
+  @include m.box-shadow-large;
   overflow: hidden;
 }
 
 .image {
   object-fit: cover;
   object-position: 0 -150px;
-  // transform: scale(1.2);
 }
 
-.text-highlight {
-  color: blue;
+.image-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.ribbon-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ribbon-container {
+  position: relative;
+  height: calc(303px * 0.6);
+  width: calc(244px * 0.6);
+}
+
+.ribbon {
+  object-fit: cover;
+}
+
+.ribbon-text {
+  margin-top: -2.25rem;
+}
+
+.text {
+  width: 40rem;
+  line-height: v.$line-height-paragraph;
 }

@@ -2,7 +2,7 @@
 
 .section {
   width: 100%;
-  padding-bottom: v.$vertical-padding-section;
+  padding: v.$vertical-spacing-section 0;
   background-color: teal;
 }
 
@@ -12,5 +12,5 @@
 }
 
 .heading {
-  padding-bottom: v.$vertical-padding-section-heading;
+  margin-bottom: v.$vertical-spacing-section-heading;
 }

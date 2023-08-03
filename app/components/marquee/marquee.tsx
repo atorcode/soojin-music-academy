@@ -7,7 +7,7 @@ import { TestimonialCard } from "../testimonial-card";
 export const Marquee = () => {
   return (
     <article className={styles["marquee-container"]}>
-      <article className={styles["marquee"]}>
+      <div className={styles["marquee"]}>
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />
@@ -17,7 +17,7 @@ export const Marquee = () => {
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />
-      </article>
+      </div>
     </article>
   );
 };

@@ -8,11 +8,29 @@ export const AboutAcademySection = () => {
   return (
     <section className={styles["section"]}>
       <div className={styles["content-wrapper"]}>
-        <div className={styles["image-container"]}>
-          <Image src="/p3.jpg" alt="" fill className={styles["image"]} />
+        <div className={styles["image-group"]}>
+          <div className={styles["image-container"]}>
+            <Image src="/p3.jpg" alt="" fill className={styles["image"]} />
+          </div>
+          <section className={styles["ribbon-section"]}>
+            <div className={styles["ribbon-container"]}>
+              <Image
+                src="/20-years.png"
+                alt=""
+                fill
+                className={styles["ribbon"]}
+              />
+            </div>
+            <p className={styles["ribbon-text"]}>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+              rem.
+            </p>
+          </section>
         </div>
-        <h2>Connecting Through the Language of Music</h2>
-        <p>
+        <h2 className={styles["heading"]}>
+          Connecting Through the Language of Music
+        </h2>
+        <p className={styles["text"]}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eos
           aliquam aspernatur eaque sunt eligendi repellendus beatae quisquam,
           tenetur eum fugit fuga! Natus itaque pariatur at, assumenda nam

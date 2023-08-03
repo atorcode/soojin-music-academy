@@ -47,7 +47,7 @@ export const FaqSection = () => {
             />
             <Accordion
               title="I want to join a choir. Do you know of any in the area?"
-              content="In addition to running my music academy, I am also a conductor and founding member for the Federal Way Bel Canto Choir. We are a Non-profit Organization and an integral part of the Korean community in our city. For the time being, we are meeting once a week on Wednesdays. We'd love to have you over there. There will be delicious food!"
+              content="In addition to running my music academy, I am also a conductor and founding member for the Federal Way Bel Canto Choir. We are a Non-profit Organization and an integral part of the Korean community in our city. For the time being, we are meeting once a week on Tuesdays. We'd love to have you over there. There will be delicious food!"
             />
             <Accordion
               title="Do you teach other instruments?"

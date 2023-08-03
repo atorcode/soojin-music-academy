@@ -1,7 +1,5 @@
 @use "../../partials/variables" as v;
 
 .section {
-  width: 100%;
-  padding-bottom: v.$vertical-padding-section;
-  background-color: silver;
+  padding: v.$vertical-spacing-section 0;
 }

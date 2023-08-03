@@ -1,8 +1,9 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .section {
-  padding-bottom: v.$vertical-padding-section;
-  background-color: blue;
+  padding: v.$vertical-spacing-section 0;
+  background-color: gray;
 }
 
 .content-wrapper {
@@ -26,6 +27,7 @@
   height: 600px;
   overflow: hidden;
   flex-shrink: 0;
+  @include m.box-shadow-large;
   border-radius: v.$border-rounded-large;
 }
 
