@@ -10,7 +10,7 @@
   // object-position: 0 -200px;
 }
 
-.text {
+.text-section {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -23,5 +23,30 @@
 .heading {
   font-size: 2rem;
   color: white;
+  opacity: 0;
   z-index: 10;
+
+  transition: 2000ms opacity ease;
+}
+
+.heading-active {
+  opacity: 1;
+}
+
+.delayed-text {
+  opacity: 0;
+  transition: 1000ms 1000ms opacity ease;
+}
+
+.delayed-text-active {
+  opacity: 1;
+}
+
+.button {
+  opacity: 0;
+  transition: 1000ms 2000ms opacity ease;
+}
+
+.button-active {
+  opacity: 1;
 }
