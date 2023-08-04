@@ -1,4 +1,5 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .section {
   width: 100%;
@@ -7,16 +8,19 @@
 }
 
 .content-wrapper {
-  width: v.$content-width;
-  margin: auto;
+  @include m.content-wrapper-alignment;
 }
 
 .heading {
+  display: flex;
+  align-self: flex-start;
   padding-bottom: v.$vertical-spacing-section-heading;
 }
 
 .form-and-icons {
   display: flex;
+  justify-content: center;
+  margin: auto;
   gap: 2rem;
 }
 

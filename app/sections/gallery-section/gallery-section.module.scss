@@ -4,7 +4,6 @@
 .section {
   width: 100%;
   padding: v.$vertical-spacing-section 0;
-  background-color: teal;
   margin-top: -70px;
   @include m.wavy-divider;
 }
