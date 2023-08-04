@@ -20,6 +20,7 @@
 
 .image-container {
   position: relative;
+  flex-shrink: 0;
   width: 780px;
   height: 360px;
   border-radius: v.$border-rounded-large;
@@ -34,8 +35,7 @@
 
 .image-group {
   display: flex;
-  align-items: flex-start;
-  gap: 5rem;
+  gap: 7rem;
 }
 
 .ribbon-section {
@@ -46,6 +46,7 @@
 
 .ribbon-container {
   position: relative;
+  flex-shrink: 0;
   height: calc(303px * 0.6);
   width: calc(244px * 0.6);
 }
@@ -54,8 +55,9 @@
   object-fit: cover;
 }
 
-.ribbon-text {
+.ribbon-caption {
   margin-top: -2.25rem;
+  font-weight: 600;
 }
 
 .text {
