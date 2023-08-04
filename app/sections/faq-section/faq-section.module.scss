@@ -1,18 +1,26 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .section {
   width: 100%;
   padding: v.$vertical-spacing-section 0;
   background-color: turquoise;
+  @include m.wavy-divider;
+  margin-bottom: -50px;
 }
 
 .content-wrapper {
-  width: v.$content-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
   margin: auto;
 }
 
 .heading {
   padding-bottom: v.$vertical-spacing-section-heading;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 .faq {

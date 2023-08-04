@@ -3,21 +3,36 @@
 
 .section {
   padding: v.$vertical-spacing-section 0;
-  background-color: gray;
+  background-image: url("/about-me.png");
+  background-repeat: no-repeat;
+  background-color: black;
+  color: rgb(217, 217, 217);
+  @include m.wavy-divider;
+  margin-top: -50px;
 }
 
 .content-wrapper {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
   align-items: center;
+  gap: 18rem;
   width: v.$content-width;
   margin: auto;
+}
+
+.greeting {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+  margin-right: 8rem;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 33%;
   text-align: end;
 }
 
@@ -31,13 +46,6 @@
   border-radius: v.$border-rounded-large;
 }
 
-// for p1 image
-// .image {
-//   object-fit: cover;
-//   transform: translate(-5%, -5%) scale(2);
-// }
-
-// for p2 image
 .image {
   object-fit: cover;
   transform: translate(-10%) scale(1.2);
