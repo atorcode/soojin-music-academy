@@ -18,6 +18,7 @@ export const AboutAcademySection = () => {
                 src="/20-years.png"
                 alt=""
                 fill
+                unoptimized
                 className={styles["ribbon"]}
               />
             </div>
