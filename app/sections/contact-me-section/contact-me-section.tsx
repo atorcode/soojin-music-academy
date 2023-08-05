@@ -28,10 +28,8 @@ export const ContactMeSection = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (Object.values(areFieldsValid).every((value) => value === true)) {
-      console.log("YES");
       setDisplayedNotification({ type: "success", text: "YAHOO!" });
     } else {
-      console.log("NO");
       setDisplayedNotification({ type: "warning", text: "FAIL" });
     }
   };
