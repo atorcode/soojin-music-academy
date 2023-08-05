@@ -2,6 +2,9 @@
 @use "../../partials/mixins" as m;
 
 .notification {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +12,8 @@
   width: 270px;
   height: 50px;
   padding: 1rem;
-  // transform: translateX(150%);
-  // margin-top: -2rem;
+  transform: translateX(150%);
+  margin-top: -2rem;
   border-radius: v.$border-rounded-small;
   background-color: turquoise;
   @include m.box-shadow-large;
@@ -20,24 +23,24 @@
   transition: transform 500ms ease, margin-top 300ms ease;
 }
 
-// .notification-enter-active {
-//   transform: translateX(-4%);
-//   margin-top: 0.5rem;
-// }
+.notification-enter-active {
+  transform: translateX(-4%);
+  margin-top: 0.5rem;
+}
 
-// .notification-enter-done {
-//   transform: translateX(0);
-//   margin-top: 0.5rem;
-//   transition: transform 200ms ease;
-// }
+.notification-enter-done {
+  transform: translateX(0);
+  margin-top: 0.5rem;
+  transition: transform 200ms ease;
+}
 
-// .notification-exit {
-//   transform: translateX(0%);
-// }
+.notification-exit {
+  transform: translateX(0%);
+}
 
-// .notification-exit-active {
-//   transform: translateX(150%);
-// }
+.notification-exit-active {
+  transform: translateX(150%);
+}
 
 .icon {
   display: flex;

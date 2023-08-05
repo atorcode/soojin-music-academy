@@ -10,7 +10,10 @@ import { DescriptiveIconGroup } from "@/app/components/descriptive-icon-group";
 import { Notification } from "@/app/components/notification";
 
 // hooks
-import { useState } from "react";
+import { useRef, useState } from "react";
+
+// constants
+import { NOTIFICATION_DURATION } from "@/app/constants/constants";
 
 // types
 import { NotificationType } from "@/app/shared-types/notification-type";
@@ -25,13 +28,21 @@ export const ContactMeSection = () => {
   const [displayedNotification, setDisplayedNotification] =
     useState<NotificationType | null>(null);
 
+  const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    clearTimeout(timerRef.current);
+
     if (Object.values(areFieldsValid).every((value) => value === true)) {
       setDisplayedNotification({ type: "success", text: "YAHOO!" });
     } else {
       setDisplayedNotification({ type: "warning", text: "FAIL" });
     }
+    timerRef.current = setTimeout(() => {
+      setDisplayedNotification(null);
+    }, NOTIFICATION_DURATION);
   };
 
   return (
