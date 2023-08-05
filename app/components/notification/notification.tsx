@@ -1,5 +1,3 @@
-"use client";
-
 // styles
 import styles from "./notification.module.scss";
 
@@ -7,17 +5,10 @@ import styles from "./notification.module.scss";
 import { IoWarningOutline } from "react-icons/io5";
 import { IoCheckboxOutline } from "react-icons/io5";
 
-// hooks
-import { useState } from "react";
+// types
+import { NotificationType } from "@/app/shared-types/notification-type";
 
-export const Notification = ({
-  type,
-  text,
-}: {
-  type: "warning" | "success";
-  text: string;
-}) => {
-  // const [isVisible, setIsVisible] = useState<boolean>(false);
+export const Notification = ({ type, text }: NotificationType) => {
   return (
     <div className={styles["notification"]}>
       {type === "success" ? (
