@@ -1,9 +1,15 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .resume {
-  width: 1000px;
-  height: 1000px;
-  background-color: yellow;
-  color: black;
+  position: relative;
+  width: calc(1545px * 0.6);
+  height: calc(2000px * 0.6);
   border-radius: v.$border-rounded-large;
+  overflow: hidden;
+  @include m.box-shadow-large;
+}
+
+.image {
+  object-fit: cover;
 }
