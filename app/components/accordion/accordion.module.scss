@@ -1,9 +1,11 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .accordion {
   width: 35rem;
   background-color: pink;
   border-radius: v.$border-rounded-small;
+  @include m.box-shadow-standard;
   overflow: hidden;
 }
 

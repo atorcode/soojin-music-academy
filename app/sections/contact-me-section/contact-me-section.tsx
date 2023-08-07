@@ -49,7 +49,7 @@ export const ContactMeSection = () => {
     <section className={styles["section"]}>
       <div className={styles["content-wrapper"]}>
         <h2 className={styles["heading"]}>Embark on Your Journey Today</h2>
-        <div className={styles["form-and-icons"]}>
+        <div className={styles["form-and-details"]}>
           <form className={styles["form"]} onSubmit={handleSubmit}>
             <FormField fieldType="email" setIsValid={setAreFieldsValid} />
             <FormField fieldType="subject" setIsValid={setAreFieldsValid} />
@@ -60,13 +60,21 @@ export const ContactMeSection = () => {
             />
             <Button text="Send Message" />
           </form>
-          <DescriptiveIconGroup />
-          {displayedNotification && (
-            <Notification
-              type={displayedNotification.type}
-              text={displayedNotification.text}
-            />
-          )}
+          <div>
+            <p className={styles["form-description"]}>
+              We now offer free 30-minute consultations! Whether you're a
+              beginner or a seasoned vocalist, we're here to help you take your
+              musical journey to new heights. Feel free to message us with any
+              questions or to schedule your session today.
+            </p>
+            <DescriptiveIconGroup />
+            {displayedNotification && (
+              <Notification
+                type={displayedNotification.type}
+                text={displayedNotification.text}
+              />
+            )}
+          </div>
         </div>
       </div>
     </section>

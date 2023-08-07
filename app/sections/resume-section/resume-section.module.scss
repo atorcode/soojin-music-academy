@@ -1,0 +1,25 @@
+@use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
+
+.section {
+  width: 100%;
+  padding: v.$vertical-spacing-section 0;
+  background-color: white;
+  @include m.wavy-divider;
+  margin-top: -72px;
+  background-color: rgb(80, 80, 80);
+}
+
+.content-wrapper {
+  min-width: v.$content-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 840px) {
+  .section {
+    display: none;
+  }
+}

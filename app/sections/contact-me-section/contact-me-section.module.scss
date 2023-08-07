@@ -4,7 +4,6 @@
 .section {
   width: 100%;
   padding: v.$vertical-spacing-section 0;
-  background-color: purple;
 }
 
 .content-wrapper {
@@ -17,7 +16,7 @@
   padding-bottom: v.$vertical-spacing-section-heading;
 }
 
-.form-and-icons {
+.form-and-details {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -28,4 +27,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.form-description {
+  width: 30rem;
+  margin-bottom: 1rem;
+  line-height: v.$line-height-paragraph;
 }

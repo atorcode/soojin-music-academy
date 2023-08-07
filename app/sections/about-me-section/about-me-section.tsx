@@ -41,7 +41,6 @@ export const AboutMeSection = () => {
             <Image src="/p2.jpg" alt="" fill className={styles["image"]} />
           </div>
         </section>
-        <Resume />
       </div>
     </section>
   );

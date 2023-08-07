@@ -3,8 +3,6 @@
 
 .resume {
   position: relative;
-  width: calc(1545px * 0.6);
-  height: calc(2000px * 0.6);
   border-radius: v.$border-rounded-large;
   overflow: hidden;
   @include m.box-shadow-large;
@@ -12,4 +10,18 @@
 
 .image {
   object-fit: cover;
+}
+
+@media (min-width: 840px) {
+  .resume {
+    height: calc(2000px * 0.5);
+    width: calc(1545px * 0.5);
+  }
+}
+
+@media (min-width: 1280px) {
+  .resume {
+    height: calc(2000px * 0.6);
+    width: calc(1545px * 0.6);
+  }
 }

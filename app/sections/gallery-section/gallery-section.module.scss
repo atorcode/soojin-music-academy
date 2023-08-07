@@ -4,8 +4,10 @@
 .section {
   width: 100%;
   padding: v.$vertical-spacing-section 0;
-  margin-top: -70px;
+  margin-top: -72px;
   @include m.wavy-divider;
+  background-color: black;
+  color: rgb(217, 217, 217);
 }
 
 .content-wrapper {
