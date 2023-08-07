@@ -2,6 +2,7 @@
 @use "../../partials/mixins" as m;
 
 .section {
+  position: relative;
   width: 100%;
   padding: v.$vertical-spacing-section 0;
   background-image: url("/background-academy.png");
@@ -14,13 +15,18 @@
   margin: auto;
 }
 
+.content-and-ribbon {
+  display: flex;
+  flex-direction: column;
+}
+
 .heading {
   margin: 2rem 0 v.$vertical-spacing-section-heading 0;
 }
 
 .image-container {
   position: relative;
-  flex-shrink: 0;
+  // flex-shrink: 0;
   width: 780px;
   height: 360px;
   border-radius: v.$border-rounded-large;
@@ -30,13 +36,12 @@
 
 .image {
   object-fit: cover;
-  object-position: 0 -150px;
+  object-position: bottom;
 }
 
 .image-group {
   display: flex;
-  // gap: clamp(1rem, 10vw, 10rem);
-  gap: 10rem;
+  gap: clamp(1rem, 10vw, 10rem);
 }
 
 .ribbon-section {
@@ -59,10 +64,56 @@
 .ribbon-caption {
   margin-top: -2.25rem;
   font-weight: 600;
+  min-width: 16rem;
 }
 
 .text {
-  width: 40rem;
+  max-width: 40rem;
   line-height: v.$line-height-paragraph;
   text-align: justify;
+}
+
+@media (max-width: 1536px) {
+  .image-group {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1320px) {
+  .ribbon-section {
+    position: absolute;
+    top: 40px;
+    gap: 1rem;
+  }
+  .ribbon-container {
+    height: calc(303px * 0.4);
+    width: calc(244px * 0.4);
+  }
+  .ribbon-caption {
+    font-size: 0.9rem;
+    min-width: 12rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .image-container {
+    width: 80vw;
+    height: 240px;
+  }
+}
+
+@media (max-width: 550px) {
+  .content-wrapper {
+    width: 92vw;
+  }
+  .heading {
+    font-size: 1.3rem;
+  }
+  .text {
+    text-align: start;
+    font-size: 0.9rem;
+  }
+  .image-container {
+    width: 92vw;
+  }
 }
