@@ -10,4 +10,10 @@
   background-color: rgb(30, 40, 40);
   @include m.box-shadow-large;
   cursor: pointer;
+
+  transition: background-color v.$transition-speed-standard ease;
+
+  &:hover {
+    background-color: rgb(20, 26, 26);
+  }
 }

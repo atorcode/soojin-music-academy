@@ -25,7 +25,7 @@
   opacity: 0;
   z-index: 10;
 
-  transition: 2000ms opacity ease;
+  transition: opacity 2000ms ease;
 }
 
 .heading-active {
@@ -35,7 +35,7 @@
 .delayed-text {
   color: white;
   opacity: 0;
-  transition: 1000ms 1000ms opacity ease;
+  transition: opacity 1000ms 1000ms ease;
 }
 
 .delayed-text-active {
@@ -44,7 +44,7 @@
 
 .button {
   opacity: 0;
-  transition: 1000ms 2000ms opacity ease;
+  transition: opacity 1000ms 2000ms ease;
 }
 
 .button-active {

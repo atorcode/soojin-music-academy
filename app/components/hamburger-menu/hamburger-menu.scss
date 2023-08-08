@@ -8,8 +8,8 @@
     .note-svg {
       top: 25px;
       left: 26px;
-      transition: v.$transition-speed-standard top ease,
-        v.$transition-speed-standard left ease;
+      transition: top v.$transition-speed-standard ease,
+        left v.$transition-speed-standard ease;
     }
   }
 }
@@ -24,8 +24,8 @@
   position: absolute;
   left: 3px;
   top: 6px;
-  transition: v.$transition-speed-standard top ease,
-    v.$transition-speed-standard left ease;
+  transition: top v.$transition-speed-standard ease,
+    left v.$transition-speed-standard ease;
   z-index: 100;
   transform: scale(0.9);
 }
