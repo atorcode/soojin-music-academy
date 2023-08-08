@@ -94,7 +94,7 @@
     width: calc(244px * 0.4);
   }
   .ribbon-caption {
-    font-size: 0.9rem;
+    font-size: v.$paragraph-size-small;
     min-width: 12rem;
   }
 }
@@ -110,11 +110,11 @@
     width: 92vw;
   }
   .heading {
-    font-size: 1.3rem;
+    font-size: v.$heading-size-small;
   }
   .text {
     text-align: start;
-    font-size: 0.9rem;
+    font-size: v.$paragraph-size-small;
   }
   .image-container {
     width: 92vw;

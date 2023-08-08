@@ -1,8 +1,11 @@
 @use "../../partials/variables" as v;
 @use "../../partials/mixins" as m;
 
+// Currently, max-height must be adjusted to strike a balance between being tall enough to accommodate the tallest element, but being short enough for transition not to look abrupt and jerky for shorter elements. The larger the gap between the tallest and smallest elements, the bigger of an issue this presents.
+
 .accordion {
-  width: 35rem;
+  width: 40vw;
+  max-width: 35rem;
   background-color: pink;
   border-radius: v.$border-rounded-small;
   @include m.box-shadow-standard;
@@ -13,9 +16,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3rem;
+  gap: 1rem;
+  text-align: start;
+  min-height: 3rem;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   background-color: pink;
   border: none;
   text-transform: none;
@@ -42,4 +47,29 @@
 .content-expanded {
   max-height: 168px;
   padding: 0 1rem 1rem 1rem;
+}
+
+@media (max-width: 1280px) {
+  .accordion {
+    width: 80vw;
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .content-expanded {
+    max-height: 208px;
+  }
+}
+
+@media (max-width: 550px) {
+  .accordion {
+    width: 92vw;
+  }
+  .content {
+    font-size: v.$paragraph-size-small;
+  }
+  .content-expanded {
+    max-height: 268px;
+  }
 }
