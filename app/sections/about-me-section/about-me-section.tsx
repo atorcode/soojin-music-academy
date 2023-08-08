@@ -3,7 +3,6 @@ import styles from "./about-me-section.module.scss";
 
 // components
 import Image from "next/image";
-import { Resume } from "@/app/components/resume";
 
 export const AboutMeSection = () => {
   return (
@@ -38,7 +37,12 @@ export const AboutMeSection = () => {
             </div>
           </div>
           <div className={styles["image-container"]}>
-            <Image src="/p2.jpg" alt="" fill className={styles["image"]} />
+            <Image
+              src="/about-me-profile.jpg"
+              alt=""
+              fill
+              className={styles["image"]}
+            />
           </div>
         </section>
       </div>

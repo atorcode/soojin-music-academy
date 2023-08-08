@@ -3,7 +3,7 @@
 
 .section {
   padding: v.$vertical-spacing-section 0;
-  background-image: url("/about-me.png");
+  background-image: url("/about-me-background.png");
   background-repeat: no-repeat;
   color: rgb(217, 217, 217);
   @include m.wavy-divider;

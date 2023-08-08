@@ -8,15 +8,25 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { Avatar } from "../avatar";
 import { StarRating } from "../star-rating/star-rating";
 
-export const TestimonialCard = () => {
+export const TestimonialCard = ({
+  name,
+  title,
+  quote,
+  url,
+}: {
+  name: string;
+  title: string;
+  quote: string;
+  url: string;
+}) => {
   return (
     <article className={styles["card"]}>
       <section className={styles["header-and-rating"]}>
         <div className={styles["header"]}>
-          <Avatar />
+          <Avatar name={name} url={url} />
           <div>
-            <p className={styles["name"]}>John Doe</p>
-            <p className={styles["personal-title"]}>Student: 7 years</p>
+            <p className={styles["name"]}>{name}</p>
+            <p className={styles["personal-title"]}>{title}</p>
           </div>
         </div>
         <div className={styles["rating"]}>
@@ -25,10 +35,7 @@ export const TestimonialCard = () => {
       </section>
       <section>
         <FaQuoteLeft className={styles["quote-open"]} />
-        <p className={styles["quote-text"]}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cumque
-          est tempore dicta nihil id nulla natus ab totam corporis?
-        </p>
+        <p className={styles["quote-text"]}>{quote}</p>
         <FaQuoteRight className={styles["quote-closed"]} />
       </section>
     </article>

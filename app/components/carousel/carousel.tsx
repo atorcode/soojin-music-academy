@@ -51,7 +51,7 @@ export const Carousel = () => {
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <Image
-                src="/p27.png"
+                src="/p2.png"
                 alt=""
                 fill
                 unoptimized
@@ -60,7 +60,7 @@ export const Carousel = () => {
             </div>
             <div className="swiper-slide">
               <Image
-                src="/p26.png"
+                src="/p3.png"
                 alt=""
                 fill
                 unoptimized
@@ -79,6 +79,15 @@ export const Carousel = () => {
             <div className="swiper-slide">
               <Image
                 src="/p24.png"
+                alt=""
+                fill
+                unoptimized
+                className={styles["image"]}
+              />
+            </div>
+            <div className="swiper-slide">
+              <Image
+                src="/p1.jpg"
                 alt=""
                 fill
                 unoptimized
