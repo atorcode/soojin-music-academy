@@ -42,7 +42,6 @@ export const Carousel = () => {
       },
     });
   }, []);
-  // Swiper.use([Autoplay]);
 
   return (
     <>

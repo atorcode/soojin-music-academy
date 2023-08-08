@@ -17,6 +17,7 @@
 }
 
 .form-and-details {
+  width: 85vw;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -30,7 +31,24 @@
 }
 
 .form-description {
-  width: 30rem;
   margin-bottom: 1rem;
   line-height: v.$line-height-paragraph;
+}
+
+@media (max-width: 1024px) {
+  .form-and-details {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 550px) {
+  .heading {
+    font-size: v.$heading-size-small;
+  }
+  .form-and-details {
+    width: 100%;
+  }
+  .content-wrapper {
+    width: 92vw;
+  }
 }

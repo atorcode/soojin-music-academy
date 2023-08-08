@@ -60,7 +60,7 @@ export const ContactMeSection = () => {
             />
             <Button text="Send Message" />
           </form>
-          <div>
+          <div className={styles["form-description-and-icons"]}>
             <p className={styles["form-description"]}>
               We now offer free 30-minute consultations! Whether you're a
               beginner or a seasoned vocalist, we're here to help you take your

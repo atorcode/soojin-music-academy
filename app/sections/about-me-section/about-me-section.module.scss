@@ -11,10 +11,9 @@
 }
 
 .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18rem;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: v.$content-width;
   margin: auto;
 }
@@ -55,7 +54,7 @@
   width: 420px;
   height: 600px;
   overflow: hidden;
-  flex-shrink: 0;
+  // flex-shrink: 0;
   @include m.box-shadow-large;
   border-radius: v.$border-rounded-large;
 }
