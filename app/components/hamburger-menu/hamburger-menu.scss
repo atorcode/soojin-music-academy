@@ -1,0 +1,31 @@
+@use "../../partials/variables" as v;
+
+.svg-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    .note-svg {
+      top: 25px;
+      left: 26px;
+      transition: v.$transition-speed-standard top ease,
+        v.$transition-speed-standard left ease;
+    }
+  }
+}
+
+.staff-svg {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.note-svg {
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  transition: v.$transition-speed-standard top ease,
+    v.$transition-speed-standard left ease;
+  z-index: 100;
+  transform: scale(0.9);
+}

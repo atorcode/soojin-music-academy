@@ -29,7 +29,7 @@ export const AboutAcademySection = () => {
                 />
               </div>
               <p className={styles["ribbon-caption"]}>
-                Proudly serving the community for two decades.
+                Proudly serving the community for <span>two decades.</span>
               </p>
             </section>
           </div>

@@ -65,6 +65,10 @@
   margin-top: -2.25rem;
   font-weight: 600;
   min-width: 16rem;
+
+  span {
+    white-space: nowrap;
+  }
 }
 
 .text {
@@ -98,7 +102,6 @@
 @media (max-width: 1024px) {
   .image-container {
     width: 80vw;
-    height: 240px;
   }
 }
 
@@ -115,5 +118,6 @@
   }
   .image-container {
     width: 92vw;
+    height: 240px;
   }
 }

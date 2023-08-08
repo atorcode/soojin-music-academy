@@ -4,6 +4,9 @@ import styles from "./nav-bar.module.scss";
 // icons
 import { GiMusicalScore } from "react-icons/gi";
 
+// components
+import { HamburgerMenu } from "../hamburger-menu";
+
 export const NavBar = () => {
   return (
     <nav className={styles["nav"]}>
@@ -17,6 +20,7 @@ export const NavBar = () => {
         <a href="#">FAQ</a>
         <a href="#">Contact</a>
       </span>
+      <HamburgerMenu />
     </nav>
   );
 };
