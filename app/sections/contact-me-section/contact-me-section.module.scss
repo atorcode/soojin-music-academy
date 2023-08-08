@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: v.$screen-width-small) {
   .heading {
     font-size: v.$heading-size-small;
   }

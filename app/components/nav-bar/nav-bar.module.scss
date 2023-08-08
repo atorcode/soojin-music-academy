@@ -67,4 +67,19 @@
   .links {
     display: none;
   }
+  .logo {
+    font-size: 3rem;
+  }
+  .business-name {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    padding: 0 1rem;
+  }
+  .business-name {
+    font-size: 1rem;
+  }
 }
