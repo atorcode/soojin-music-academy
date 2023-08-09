@@ -5,7 +5,7 @@
   padding: v.$vertical-spacing-section 0;
   background-image: url("/about-me-background.png");
   background-repeat: no-repeat;
-  color: rgb(217, 217, 217);
+  color: v.$text-color;
   @include m.wavy-divider;
   margin-top: -50px;
 }

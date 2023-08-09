@@ -16,6 +16,7 @@ export const HamburgerMenu = () => {
           xmlns="http://www.w3.org/2000/svg"
           className="staff-svg"
         >
+          {/* color value of following path fills should be the same as the $text-color SASS variable */}
           <path
             d="M2 3.5C2 3.22386 2.22386 3 2.5 3H17.5C17.7761 3 18 3.22386 18 3.5C18 3.77614 17.7761 4 17.5 4H2.5C2.22386 4 2 3.77614 2 3.5Z"
             fill="rgb(217, 217, 217)"

@@ -7,22 +7,22 @@
   border: none;
   border-radius: v.$border-rounded-small;
   color: white;
-  background-color: rgb(30, 40, 40);
+  background-color: v.$button-color;
   @include m.box-shadow-large;
   cursor: pointer;
 
   transition: background-color v.$transition-speed-standard ease;
 
   &:hover {
-    background-color: rgb(20, 26, 26);
+    background-color: v.$button-color-dark;
   }
 }
 
 @media (max-width: v.$screen-width-small) {
   .button {
-    background-color: rgb(40, 52, 52);
+    background-color: v.$button-color-light;
     &:hover {
-      background-color: rgb(30, 40, 40);
+      background-color: v.$button-color;
     }
   }
 }
