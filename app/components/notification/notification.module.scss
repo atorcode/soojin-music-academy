@@ -13,14 +13,14 @@
   height: 50px;
   padding: 1rem;
   transform: translateX(150%);
-  margin-top: -2rem;
+  // margin-top: -2rem;
   border-radius: v.$border-rounded-small;
   background-color: turquoise;
   @include m.box-shadow-large;
   font-size: 0.9rem;
   user-select: none;
 
-  transition: transform 500ms ease, margin-top 300ms ease;
+  transition: transform 500ms ease;
 }
 
 .notification-enter-active {

@@ -1,16 +1,25 @@
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  font-size: 4rem;
-  color: white;
-  cursor: pointer;
+@use "../../partials/variables" as v;
+
+.menu {
+  position: fixed;
+  width: 0;
+  max-width: v.$screen-width-small;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.4);
+
+  transition: width 500ms ease;
 }
 
-@media (min-width: 768px) {
-  .button {
-    display: none;
-  }
+.menu-enter-active {
+  width: 100vw;
+}
+
+.menu-enter-done {
+  width: 100vw;
+}
+
+.menu-exit-active {
+  width: 0;
 }
