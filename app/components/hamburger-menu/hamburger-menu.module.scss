@@ -2,24 +2,90 @@
 
 .menu {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 0;
   max-width: v.$screen-width-small;
   height: 100vh;
   top: 0;
   right: 0;
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: v.$button-color-dark;
+  z-index: 100;
 
   transition: width 500ms ease;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2rem;
+    opacity: 0;
+
+    transition: opacity v.$transition-speed-standard ease;
+  }
+
+  .button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+
+    transition: background-color v.$transition-speed-standard ease,
+      opacity v.$transition-speed-standard ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: v.$button-color-light;
+    }
+  }
+
+  .icon {
+    font-size: 3.5rem;
+    color: white;
+  }
 }
 
 .menu-enter-active {
   width: 100vw;
+
+  .links {
+    opacity: 1;
+  }
+
+  .button {
+    opacity: 1;
+  }
 }
 
 .menu-enter-done {
   width: 100vw;
+
+  .links {
+    opacity: 1;
+  }
+
+  .button {
+    opacity: 1;
+  }
 }
 
-.menu-exit-active {
+.menu-exit {
   width: 0;
+
+  .links {
+    opacity: 0;
+
+    transition: opacity 200ms ease;
+  }
+
+  .button {
+    opacity: 0;
+  }
 }

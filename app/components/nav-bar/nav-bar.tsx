@@ -29,7 +29,7 @@ export const NavBar = () => {
       </span>
       <HamburgerMenuButton setIsExpanded={setIsExpanded} />
       {/* CSSTransition's unmountOnExit will handle unmounting */}
-      <HamburgerMenu isExpanded={isExpanded} />
+      <HamburgerMenu isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
     </nav>
   );
 };
