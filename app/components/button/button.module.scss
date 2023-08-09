@@ -17,3 +17,12 @@
     background-color: rgb(20, 26, 26);
   }
 }
+
+@media (max-width: v.$screen-width-small) {
+  .button {
+    background-color: rgb(40, 52, 52);
+    &:hover {
+      background-color: rgb(30, 40, 40);
+    }
+  }
+}

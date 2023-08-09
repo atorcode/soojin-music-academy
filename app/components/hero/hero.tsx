@@ -27,13 +27,15 @@ export const Hero = () => {
 
   return (
     <section className={styles["hero"]}>
-      <Image
-        src="/hero-final.png"
-        alt="Woman playing piano"
-        fill
-        unoptimized
-        className={styles["image"]}
-      />
+      <div className={styles["image-container"]}>
+        <Image
+          src="/hero-final.png"
+          alt="Woman playing piano"
+          fill
+          unoptimized
+          className={styles["image"]}
+        />
+      </div>
       <div className={styles["text-section"]}>
         <h1
           className={`${styles["heading"]} ${

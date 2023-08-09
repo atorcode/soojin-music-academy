@@ -1,7 +1,11 @@
+@use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
+
 .hero {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: rgb(14, 20, 20);
   overflow: hidden;
 }
 
@@ -34,6 +38,7 @@
 
 .delayed-text {
   color: white;
+  white-space: nowrap;
   opacity: 0;
   transition: opacity 1000ms 1000ms ease;
 }
@@ -49,4 +54,38 @@
 
 .button-active {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    width: 18rem;
+  }
+  .image {
+    object-position: -550px 0;
+  }
+}
+
+@media (max-width: v.$screen-width-small) {
+  .text-section {
+    left: 6.8%;
+    top: 32%;
+  }
+  .heading {
+    // 100vw - 2 * left value of text section
+    width: 86.4vw;
+  }
+  .image-container {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92vw;
+    height: 300px;
+    border-radius: v.$border-rounded-large;
+    overflow: hidden;
+    @include m.box-shadow-large;
+  }
+  .image {
+    object-position: bottom;
+  }
 }
