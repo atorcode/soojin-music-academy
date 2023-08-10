@@ -41,10 +41,18 @@ export const HamburgerMenu = ({
           />
         </button>
         <div className={styles["links"]}>
-          <a href="#">About</a>
-          <a href="#">Accolades</a>
-          <a href="#">FAQ</a>
-          <a href="#">Contact</a>
+          <a href="#" onClick={() => setIsExpanded(false)}>
+            About
+          </a>
+          <a href="#" onClick={() => setIsExpanded(false)}>
+            Accolades
+          </a>
+          <a href="#" onClick={() => setIsExpanded(false)}>
+            FAQ
+          </a>
+          <a href="#" onClick={() => setIsExpanded(false)}>
+            Contact
+          </a>
         </div>
       </section>
     </CSSTransition>

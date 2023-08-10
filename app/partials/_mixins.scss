@@ -1,4 +1,7 @@
+@use "./variables" as v;
+
 // spacing
+
 @mixin content-wrapper-alignment {
   display: flex;
   flex-direction: column;
@@ -33,4 +36,45 @@
       calc(50% - 70px) calc(100% - 35px) / 140px calc(51% - 35px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+}
+
+// animations
+
+@mixin border-bottom-animation {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+
+    transition: transform v.$transition-speed-standard ease;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+@mixin border-bottom-animation-ltr {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+    transform-origin: 0%;
+
+    transition: transform v.$transition-speed-standard ease;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
 }

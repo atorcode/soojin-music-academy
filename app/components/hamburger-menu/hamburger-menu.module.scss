@@ -1,4 +1,5 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .menu {
   position: fixed;
@@ -6,7 +7,6 @@
   justify-content: center;
   align-items: center;
   width: 0;
-  max-width: v.$screen-width-small;
   height: 100vh;
   top: 0;
   right: 0;
@@ -21,8 +21,18 @@
     gap: 1rem;
     font-size: 2rem;
     opacity: 0;
-
     transition: opacity v.$transition-speed-standard ease;
+
+    a {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      width: max-content;
+
+      @include m.border-bottom-animation-ltr;
+    }
   }
 
   .button {
@@ -53,7 +63,7 @@
 }
 
 .menu-enter-active {
-  width: 100vw;
+  width: 100%;
 
   .links {
     opacity: 1;
@@ -65,7 +75,7 @@
 }
 
 .menu-enter-done {
-  width: 100vw;
+  width: 100%;
 
   .links {
     opacity: 1;
