@@ -1,7 +1,7 @@
 .marquee-container {
   position: relative;
   // half of the total width of every testimonial-card + gaps
-  width: 136rem;
+  width: 238rem;
   overflow: hidden;
   padding: 10px 0;
 
@@ -15,8 +15,7 @@
 .marquee {
   display: flex;
   gap: 2rem;
-  animation: scroll 48s linear infinite;
-  // animation: scroll 4s linear infinite;
+  animation: scroll 84s linear infinite;
 }
 
 @keyframes scroll {
