@@ -37,7 +37,16 @@ export const Footer = () => {
         <p className={styles["copyright"]}>
           &copy; 2023 Soojin Music Academy. All rights reserved.
         </p>
-        <p>Made with &#x1F496; by atorcode</p>
+        <p>
+          Made with &#x1F496; by{" "}
+          <a
+            href="https://www.linkedin.com/in/alberto-torrigiotti/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            atorcode
+          </a>
+        </p>
       </div>
     </footer>
   );

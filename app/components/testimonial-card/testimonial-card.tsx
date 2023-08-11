@@ -12,15 +12,19 @@ export const TestimonialCard = ({
   name,
   title,
   quote,
+  rating,
   url,
+  color,
 }: {
   name: string;
   title: string;
   quote: string;
+  rating: number;
   url: string;
+  color: string;
 }) => {
   return (
-    <article className={styles["card"]}>
+    <article className={styles["card"]} style={{ backgroundColor: color }}>
       <section className={styles["header-and-rating"]}>
         <div className={styles["header"]}>
           <Avatar name={name} url={url} />
@@ -30,7 +34,7 @@ export const TestimonialCard = ({
           </div>
         </div>
         <div className={styles["rating"]}>
-          <StarRating rating={4.5} />
+          <StarRating rating={rating} />
         </div>
       </section>
       <section>

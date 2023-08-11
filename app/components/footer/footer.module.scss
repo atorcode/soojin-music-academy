@@ -23,7 +23,7 @@
   height: 56px;
   border-radius: 50%;
   border: none;
-  background-color: v.$text-color;
+  background-color: rgb(192, 192, 192);
   color: black;
 
   transition: background-color v.$transition-speed-standard ease;
@@ -34,7 +34,7 @@
 
   &:hover {
     cursor: pointer;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(150, 150, 150);
   }
 }
 
