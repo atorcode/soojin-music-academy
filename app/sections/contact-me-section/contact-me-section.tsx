@@ -46,7 +46,7 @@ export const ContactMeSection = () => {
   };
 
   return (
-    <section className={styles["section"]}>
+    <section className={styles["section"]} id="Contact">
       <div className={styles["content-wrapper"]}>
         <h2 className={styles["heading"]}>Embark on Your Journey Today</h2>
         <div className={styles["form-and-details"]}>

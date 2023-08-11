@@ -9,6 +9,7 @@ import { GiMusicalScore } from "react-icons/gi";
 // components
 import { HamburgerMenuButton } from "../hamburger-menu-button";
 import { HamburgerMenu } from "../hamburger-menu";
+import { NavLink } from "../nav-link";
 
 // hooks
 import { useState } from "react";
@@ -22,10 +23,10 @@ export const NavBar = () => {
         <span className={styles["business-name"]}>Soojin Music Academy</span>
       </a>
       <span className={styles["links"]}>
-        <a href="#">About</a>
-        <a href="#">Accolades</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contact</a>
+        <NavLink name="About" />
+        <NavLink name="Resume" offset={50} />
+        <NavLink name="FAQ" offset={50} />
+        <NavLink name="Contact" offset={150} />
       </span>
       <HamburgerMenuButton setIsExpanded={setIsExpanded} />
       {/* CSSTransition's unmountOnExit will handle unmounting */}

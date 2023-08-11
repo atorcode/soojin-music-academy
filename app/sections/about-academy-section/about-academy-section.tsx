@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const AboutAcademySection = () => {
   return (
-    <section className={styles["section"]}>
+    <section className={styles["section"]} id="About">
       <div className={styles["content-wrapper"]}>
         <div className={styles["content-and-ribbon"]}>
           <div className={styles["image-group"]}>

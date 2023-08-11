@@ -22,17 +22,6 @@
     font-size: 2rem;
     opacity: 0;
     transition: opacity v.$transition-speed-standard ease;
-
-    a {
-      position: relative;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0.5rem;
-      width: max-content;
-
-      @include m.border-bottom-animation-ltr;
-    }
   }
 
   .button {

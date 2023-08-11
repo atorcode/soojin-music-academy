@@ -12,10 +12,10 @@
   object-fit: cover;
 }
 
-@media (min-width: 840px) {
+@media (min-width: 767px) {
   .resume {
-    height: calc(2000px * 0.5);
-    width: calc(1545px * 0.5);
+    height: calc(2000px * 0.48);
+    width: calc(1545px * 0.48);
   }
 }
 

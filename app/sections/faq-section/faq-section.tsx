@@ -6,7 +6,7 @@ import { Accordion } from "@/app/components/accordion";
 
 export const FaqSection = () => {
   return (
-    <section className={styles["section"]}>
+    <section className={styles["section"]} id="FAQ">
       <div className={styles["content-wrapper"]}>
         <h2 className={styles["heading"]}>Frequently Asked Questions</h2>
         <article className={styles["faq"]}>

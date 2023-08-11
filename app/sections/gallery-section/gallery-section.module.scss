@@ -11,8 +11,18 @@
 }
 
 .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: v.$content-width;
   margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .heading {

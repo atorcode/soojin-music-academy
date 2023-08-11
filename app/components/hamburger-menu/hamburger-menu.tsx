@@ -11,6 +11,7 @@ import { useRef } from "react";
 
 // components
 import { CSSTransition } from "react-transition-group";
+import { HamburgerMenuLink } from "../hamburger-menu-link";
 
 export const HamburgerMenu = ({
   isExpanded,
@@ -41,18 +42,26 @@ export const HamburgerMenu = ({
           />
         </button>
         <div className={styles["links"]}>
-          <a href="#" onClick={() => setIsExpanded(false)}>
-            About
-          </a>
-          <a href="#" onClick={() => setIsExpanded(false)}>
-            Accolades
-          </a>
-          <a href="#" onClick={() => setIsExpanded(false)}>
-            FAQ
-          </a>
-          <a href="#" onClick={() => setIsExpanded(false)}>
-            Contact
-          </a>
+          <HamburgerMenuLink name="About" setIsExpanded={setIsExpanded} />
+          <HamburgerMenuLink
+            name="Gallery"
+            offset={50}
+            setIsExpanded={setIsExpanded}
+          />
+          <HamburgerMenuLink
+            name="Testimonials"
+            setIsExpanded={setIsExpanded}
+          />
+          <HamburgerMenuLink
+            name="FAQ"
+            offset={150}
+            setIsExpanded={setIsExpanded}
+          />
+          <HamburgerMenuLink
+            name="Contact"
+            offset={150}
+            setIsExpanded={setIsExpanded}
+          />
         </div>
       </section>
     </CSSTransition>
