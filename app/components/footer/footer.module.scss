@@ -1,4 +1,8 @@
+@use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
+
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,4 +10,45 @@
   height: 12rem;
   background-color: black;
   color: white;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background-color: v.$text-color;
+  color: black;
+
+  transition: background-color v.$transition-speed-standard ease;
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(170, 170, 170);
+  }
+}
+
+.categories {
+  display: flex;
+  font-size: 1rem;
+  gap: 10rem;
+}
+
+.category {
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: v.$text-color;
 }

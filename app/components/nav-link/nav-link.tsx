@@ -6,14 +6,16 @@ import { Link } from "react-scroll";
 
 export const NavLink = ({
   name,
+  scrollTo = name,
   offset = 0,
 }: {
   name: string;
+  scrollTo?: string;
   offset?: number;
 }) => {
   return (
     <Link
-      to={name}
+      to={scrollTo}
       spy={true}
       smooth={true}
       offset={offset}

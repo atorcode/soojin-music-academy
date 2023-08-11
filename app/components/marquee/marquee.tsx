@@ -11,50 +11,50 @@ export const Marquee = () => {
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         {/* duplicates for seamless looping */}
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
         <TestimonialCard
           name="Agatha"
           title="Student: 3 years"
-          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. "
+          quote="Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome. Soojin is awesome."
           url="/t4.jpg"
         />
       </div>

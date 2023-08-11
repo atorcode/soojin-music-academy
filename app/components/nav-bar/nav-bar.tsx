@@ -24,8 +24,8 @@ export const NavBar = () => {
       </a>
       <span className={styles["links"]}>
         <NavLink name="About" />
-        <NavLink name="Resume" offset={50} />
-        <NavLink name="FAQ" offset={50} />
+        <NavLink name="Accolades" scrollTo="Resume" offset={150} />
+        <NavLink name="FAQ" offset={150} />
         <NavLink name="Contact" offset={150} />
       </span>
       <HamburgerMenuButton setIsExpanded={setIsExpanded} />
