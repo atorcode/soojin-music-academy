@@ -6,7 +6,7 @@
 .accordion {
   width: 40vw;
   max-width: 35rem;
-  background-color: pink;
+  background-color: #eff3f7;
   border-radius: v.$border-rounded-small;
   @include m.box-shadow-standard;
   overflow: hidden;
@@ -21,7 +21,7 @@
   min-height: 3rem;
   width: 100%;
   padding: 0.5rem 1rem;
-  background-color: pink;
+  background-color: #eff3f7;
   border: none;
   text-transform: none;
   cursor: pointer;

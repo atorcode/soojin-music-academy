@@ -6,7 +6,6 @@ import buttonStyles from "../button/button.module.scss";
 
 // components
 import Image from "next/image";
-// import { Button } from "../button";
 import { Button as ReactScrollButton } from "react-scroll";
 
 // hooks

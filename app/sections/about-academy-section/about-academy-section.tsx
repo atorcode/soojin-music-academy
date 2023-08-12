@@ -1,8 +1,12 @@
+"use client";
+
 // styles
 import styles from "./about-academy-section.module.scss";
+import buttonStyles from "../../components/button/button.module.scss";
 
 // components
 import Image from "next/image";
+import { Button as ReactScrollButton } from "react-scroll";
 
 export const AboutAcademySection = () => {
   return (
@@ -50,6 +54,16 @@ export const AboutAcademySection = () => {
             lives through musical expression one day at a time. Join us in
             celebrating the transformative power of music!
           </p>
+          <ReactScrollButton
+            to="Contact"
+            value="BOOK YOUR FIRST LESSON"
+            type="submit"
+            spy={true}
+            smooth={true}
+            offset={150}
+            duration={500}
+            className={buttonStyles["button"]}
+          />
         </div>
       </div>
     </section>
