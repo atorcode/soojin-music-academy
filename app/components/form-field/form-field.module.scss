@@ -11,7 +11,7 @@
 .label {
   position: absolute;
   left: 1rem;
-  color: gray;
+  color: rgb(64, 64, 64);
   font-size: 1.1rem;
   cursor: text;
   user-select: none;
@@ -39,7 +39,8 @@
   outline: none;
   border: none;
   border-radius: v.$border-rounded-small;
-  background-color: pink;
+  // background-color: pink;
+  background-color: rgb(192, 192, 192);
   @include m.box-shadow-standard;
 }
 

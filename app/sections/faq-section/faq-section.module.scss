@@ -5,6 +5,7 @@
   width: 100%;
   padding: v.$vertical-spacing-section 0;
   background-color: turquoise;
+
   @include m.wavy-divider;
   margin-bottom: -50px;
 }
