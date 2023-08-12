@@ -39,7 +39,7 @@
 
 @media (max-width: v.$screen-width-small) {
   .content-wrapper {
-    width: 92vw;
+    width: v.$content-width-mobile;
   }
   .heading {
     font-size: v.$heading-size-small;

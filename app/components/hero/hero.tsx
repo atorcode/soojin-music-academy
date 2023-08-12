@@ -2,10 +2,12 @@
 
 // styles
 import styles from "./hero.module.scss";
+import buttonStyles from "../button/button.module.scss";
 
 // components
 import Image from "next/image";
-import { Button } from "../button";
+// import { Button } from "../button";
+import { Button as ReactScrollButton } from "react-scroll";
 
 // hooks
 import { useEffect, useRef, useState } from "react";
@@ -57,7 +59,15 @@ export const Hero = () => {
             hasTransitionBegun && styles["button-active"]
           }`}
         >
-          <Button text="GET STARTED" />
+          <ReactScrollButton
+            to="About"
+            value="GET STARTED"
+            type="submit"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={buttonStyles["button"]}
+          />
         </div>
       </div>
     </section>

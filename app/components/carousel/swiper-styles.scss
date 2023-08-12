@@ -51,8 +51,8 @@
 
 @media (max-width: v.$screen-width-small) {
   .swiper {
-    width: 92vw;
-    height: 92vw;
+    width: v.$content-width-mobile;
+    height: v.$content-width-mobile;
   }
 
   .swiper-pagination {

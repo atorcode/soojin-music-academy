@@ -64,7 +64,7 @@
 
 @media (max-width: v.$screen-width-small) {
   .accordion {
-    width: 92vw;
+    width: v.$content-width-mobile;
   }
   .content {
     font-size: v.$paragraph-size-small;
