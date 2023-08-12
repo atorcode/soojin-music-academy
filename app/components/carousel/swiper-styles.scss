@@ -1,3 +1,5 @@
+@use "../../partials/variables" as v;
+
 .swiper {
   width: 500px;
   height: 500px;
@@ -37,5 +39,43 @@
   &::after {
     content: "";
     font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
+@media (max-width: v.$screen-width-small) {
+  .swiper {
+    width: 92vw;
+    height: 92vw;
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  .swiper-button-prev {
+    color: white !important;
+    &::after {
+      content: "";
+      font-size: 1rem !important;
+    }
+  }
+
+  .swiper-button-next {
+    color: white !important;
+
+    &::after {
+      content: "";
+      font-size: 1rem !important;
+    }
   }
 }

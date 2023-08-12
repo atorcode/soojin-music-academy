@@ -24,8 +24,15 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: min-content;
 }
 
 .heading {
   margin-bottom: v.$vertical-spacing-section-heading;
+}
+
+@media (max-width: v.$screen-width-small) {
+  .heading {
+    font-size: v.$heading-size-small;
+  }
 }

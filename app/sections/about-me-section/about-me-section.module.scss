@@ -3,7 +3,7 @@
 
 .section {
   padding: v.$vertical-spacing-section 0;
-  background-image: url("/about-me-background.png");
+  // background-image: url("/about-me-background.png");
   background-repeat: no-repeat;
   color: v.$text-color;
   @include m.wavy-divider;
@@ -11,26 +11,22 @@
 }
 
 .content-wrapper {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   width: v.$content-width;
   margin: auto;
 }
 
 .greeting {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 2rem;
   align-items: center;
-  margin-right: 8rem;
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  // width: 33%;
-  width: 80%;
+  width: 33%;
+  min-width: 420px;
   text-align: justify;
 }
 
@@ -62,4 +58,42 @@
 .image {
   object-fit: cover;
   transform: translate(-10%) scale(1.2);
+}
+
+@media (max-width: 1279px) {
+  .image-container {
+    width: 40%;
+  }
+  .image {
+    transform: translate(0) scale(1);
+  }
+}
+
+@media (max-width: 1023px) {
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .greeting {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+    min-width: 0;
+  }
+  .image-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: v.$screen-width-small) {
+  .text {
+    text-align: start;
+  }
+
+  .heading {
+    font-size: v.$heading-size-small;
+  }
 }

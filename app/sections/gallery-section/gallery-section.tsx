@@ -9,9 +9,7 @@ export const GallerySection = () => {
     <section className={styles["section"]} id="Gallery">
       <div className={styles["content-wrapper"]}>
         <div className={styles["content"]}>
-          <h2 className={styles["heading"]}>
-            Connecting Through the Language of Music
-          </h2>
+          <h2 className={styles["heading"]}>Telling Stories Through Harmony</h2>
           <Carousel />
         </div>
       </div>

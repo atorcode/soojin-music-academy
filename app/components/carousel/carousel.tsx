@@ -94,7 +94,7 @@ export const Carousel = () => {
           </div>
           <div className="swiper-slide">
             <Image
-              src="/p23.png"
+              src="/p16.jpg"
               alt=""
               fill
               unoptimized
@@ -112,7 +112,7 @@ export const Carousel = () => {
           </div>
           <div className="swiper-slide">
             <Image
-              src="/p16.jpg"
+              src="/p23.png"
               alt=""
               fill
               unoptimized
