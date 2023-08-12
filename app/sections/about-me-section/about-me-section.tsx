@@ -1,15 +1,19 @@
+"use client";
+
 // styles
 import styles from "./about-me-section.module.scss";
+import buttonStyles from "../../components/button/button.module.scss";
 
 // components
 import Image from "next/image";
+import { Button as ReactScrollButton } from "react-scroll";
 
 export const AboutMeSection = () => {
   return (
     <section className={styles["section"]}>
       <div className={styles["content-wrapper"]}>
         <section className={styles["greeting"]}>
-          <div className={styles["text"]}>
+          <div className={styles["non-image-content"]}>
             <h2 className={styles["heading"]}>Hi, I&apos;m Soojin!</h2>
             <div className={styles["paragraphs"]}>
               <p className={styles["paragraph-text"]}>
@@ -35,6 +39,16 @@ export const AboutMeSection = () => {
                 believe it is key to love yourself and remain optimistic.
               </p>
             </div>
+            <ReactScrollButton
+              to="FAQ"
+              value="LEARN MORE"
+              type="submit"
+              spy={true}
+              smooth={true}
+              offset={150}
+              duration={500}
+              className={buttonStyles["button"]}
+            />
           </div>
           <div className={styles["image-container"]}>
             <Image
