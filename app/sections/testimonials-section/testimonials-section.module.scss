@@ -3,3 +3,22 @@
 .section {
   padding: 2rem 0;
 }
+
+@media (max-width: 1279px) {
+  .section {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding: 0;
+  }
+}
+
+@media (max-width: v.$screen-width-small) {
+  .section {
+    // *** This is the value that determines how much margin-top should be applied in marquee.module.scss ***
+    height: 260px;
+  }
+}
