@@ -15,10 +15,11 @@
   transform: translateX(150%);
   // margin-top: -2rem;
   border-radius: v.$border-rounded-small;
-  background-color: turquoise;
+  background-color: #fdfd96;
   @include m.box-shadow-large;
   font-size: 0.9rem;
   user-select: none;
+  z-index: 1000;
 
   transition: transform 500ms ease;
 }

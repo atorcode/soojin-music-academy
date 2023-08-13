@@ -36,9 +36,15 @@ export const ContactMeSection = () => {
     clearTimeout(timerRef.current);
 
     if (Object.values(areFieldsValid).every((value) => value === true)) {
-      setDisplayedNotification({ type: "success", text: "YAHOO!" });
+      setDisplayedNotification({
+        type: "success",
+        text: "Your message has been sent successfully. Thank you!",
+      });
     } else {
-      setDisplayedNotification({ type: "warning", text: "FAIL" });
+      setDisplayedNotification({
+        type: "warning",
+        text: "Please fill out all required fields appropriately!",
+      });
     }
     timerRef.current = setTimeout(() => {
       setDisplayedNotification(null);
