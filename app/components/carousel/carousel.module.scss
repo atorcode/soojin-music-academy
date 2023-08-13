@@ -1,5 +1,9 @@
 @use "../../partials/variables" as v;
 
+.container {
+  width: 100%;
+}
+
 .image {
   object-fit: cover;
 }

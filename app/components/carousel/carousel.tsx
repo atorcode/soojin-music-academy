@@ -8,43 +8,110 @@ import "./swiper-styles.scss";
 import Image from "next/image";
 
 // hooks
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Swiper dependencies
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/autoplay";
+import "swiper/scss/effect-coverflow";
 
 import Swiper from "swiper";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+} from "swiper/modules";
 
 export const Carousel = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
+  const swiperRef = useRef<Swiper | null>(null);
+
   useEffect(() => {
-    new Swiper(".swiper", {
-      modules: [Navigation, Pagination, Autoplay],
+    const handleScreenSize = () => {
+      if (window.innerWidth <= 768) {
+        setIsSmallScreen(true);
+      } else {
+        setIsSmallScreen(false);
+      }
+    };
 
-      loop: true,
+    handleScreenSize();
 
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+    window.addEventListener("resize", handleScreenSize);
 
-      navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
-      },
-
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+    return () => {
+      window.removeEventListener("resize", handleScreenSize);
+    };
   }, []);
 
+  useEffect(() => {
+    // const initSwiper = () => {
+    if (isSmallScreen) {
+      swiperRef.current?.destroy();
+      swiperRef.current = new Swiper(".swiper", {
+        modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
+
+        slidesPerView: 1,
+
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 45,
+          slideShadows: false,
+        },
+        centeredSlides: true,
+
+        loop: true,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    } else {
+      swiperRef.current?.destroy();
+      swiperRef.current = new Swiper(".swiper", {
+        modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
+
+        slidesPerView: 3,
+
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 45,
+          slideShadows: false,
+        },
+        centeredSlides: true,
+
+        loop: true,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    }
+  }, [isSmallScreen]);
+
   return (
-    <article>
+    <article className={styles["container"]}>
       <div className="swiper">
         <div className="swiper-wrapper">
           <div className="swiper-slide">

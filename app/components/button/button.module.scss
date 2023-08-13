@@ -26,15 +26,15 @@
 }
 
 .link {
-  // display: block;
-  // width: 100%;
-  // height: 100%;
   width: inherit;
   height: inherit;
 }
 
 @media (max-width: v.$screen-width-small) {
   .button {
+    font-size: 0.9rem;
+    min-width: 8rem;
+    height: 2.75rem;
     background-color: v.$button-color-light;
     &:hover {
       background-color: v.$button-color;

@@ -15,17 +15,20 @@ export const AboutMeSection = () => {
   const [isResumeDisplayed, setIsResumeDisplayed] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleResumeDisplay = () => {
       if (window.innerWidth < 768) {
         setIsResumeDisplayed(false);
       } else {
         setIsResumeDisplayed(true);
       }
     };
-    window.addEventListener("resize", handleScroll);
+
+    handleResumeDisplay();
+
+    window.addEventListener("resize", handleResumeDisplay);
 
     return () => {
-      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("resize", handleResumeDisplay);
     };
   }, []);
 

@@ -44,6 +44,10 @@
 @media (max-width: v.$screen-width-small) {
   .marquee-container {
     transform: scale(0.6);
+    // *** The use of margin-top here is a very hacky way of achieving vertical centering of marquee due to the fact that marquee can easily break with flex and position absolute. This value is related to the height of the section as defined in testimonials-section.module.scss ***
     margin-top: -40px;
+  }
+  .marquee {
+    animation: scroll 128s linear infinite;
   }
 }
