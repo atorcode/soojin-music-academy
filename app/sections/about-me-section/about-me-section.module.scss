@@ -46,6 +46,11 @@
   line-height: v.$line-height-paragraph;
 }
 
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 .image-container {
   position: relative;
   width: 420px;

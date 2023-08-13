@@ -6,9 +6,30 @@ import buttonStyles from "../../components/button/button.module.scss";
 
 // components
 import Image from "next/image";
+import { Button } from "@/app/components/button";
 import { Button as ReactScrollButton } from "react-scroll";
 
+// hooks
+import { useEffect, useState } from "react";
+
 export const AboutMeSection = () => {
+  const [isResumeDisplayed, setIsResumeDisplayed] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth < 768) {
+        setIsResumeDisplayed(false);
+      } else {
+        setIsResumeDisplayed(true);
+      }
+    };
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   return (
     <section className={styles["section"]}>
       <div className={styles["content-wrapper"]}>
@@ -39,16 +60,38 @@ export const AboutMeSection = () => {
                 believe it is key to love yourself and remain optimistic.
               </p>
             </div>
-            <ReactScrollButton
-              to="FAQ"
-              value="LEARN MORE"
-              type="submit"
-              spy={true}
-              smooth={true}
-              offset={150}
-              duration={500}
-              className={buttonStyles["button"]}
-            />
+            <div className={styles["buttons"]}>
+              {isResumeDisplayed ? (
+                <ReactScrollButton
+                  to="Resume"
+                  value="VIEW RESUME"
+                  type="submit"
+                  spy={true}
+                  smooth={true}
+                  offset={150}
+                  duration={500}
+                  className={`${buttonStyles["button"]}`}
+                />
+              ) : (
+                <a
+                  href="https://drive.google.com/file/d/1Mw3S4pJmJyaq3sASdSvsiWtIUheoEhS7/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={buttonStyles["button"]}
+                >
+                  VIEW RESUME
+                </a>
+              )}
+              <ReactScrollButton
+                to="Testimonials"
+                value="LEARN MORE"
+                type="submit"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={buttonStyles["button"]}
+              />
+            </div>
           </div>
           <div className={styles["image-container"]}>
             <Image
