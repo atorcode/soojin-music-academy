@@ -40,18 +40,18 @@ export const AboutMeSection = () => {
             <h2 className={styles["heading"]}>Hi, I&apos;m Soojin!</h2>
             <div className={styles["paragraphs"]}>
               <p className={styles["paragraph-text"]}>
-                Nice to meet you! I'm thrilled to have you here. I began my
+                Nice to meet you! I&apos;m thrilled to have you here. I began my
                 journey as a lyric soprano soloist and voice coach over 40 years
                 ago when I left my home country to pursue my dreams. Originally
                 drawn to the world of dance, a twist of fate led me to discover
-                my true calling in opera. Since then, I've expanded my
-                repertoire to include semi-classical and pop songs. I'm also a
-                choir conductor, a guitar student, and a drum enthusiast. Music
-                is truly my heart and soul.
+                my true calling in opera. Since then, I&apos;ve expanded my
+                repertoire to include semi-classical and pop songs. I&apos;m
+                also a choir conductor, a guitar student, and a drum enthusiast.
+                Music is truly my heart and soul.
               </p>
               <p className={styles["paragraph-text"]}>
-                When I'm not immersed in music, you can find me improving my
-                short game in golf, swimming, or listening to lectures. As a
+                When I&apos;m not immersed in music, you can find me improving
+                my short game in golf, swimming, or listening to lectures. As a
                 lifelong learner with a lot of different hobbies, I like to stay
                 productive and constantly grow as a person. Being trilingual has
                 given me the advantage of connecting with many different kinds

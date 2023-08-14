@@ -68,10 +68,10 @@ export const ContactMeSection = () => {
           </form>
           <div className={styles["form-description-and-icons"]}>
             <p className={styles["form-description"]}>
-              We now offer free 30-minute consultations! Whether you're a
-              beginner or a seasoned vocalist, we're here to help you take your
-              musical journey to new heights. Feel free to message us with any
-              questions or to schedule your session today.
+              We now offer free 30-minute consultations! Whether you&apos;re a
+              beginner or a seasoned vocalist, we&apos;re here to help you take
+              your musical journey to new heights. Feel free to message us with
+              any questions or to schedule your session today.
             </p>
             <DescriptiveIconGroup />
             {displayedNotification && (
