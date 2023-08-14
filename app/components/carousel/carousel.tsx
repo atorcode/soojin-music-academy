@@ -118,6 +118,7 @@ export const Carousel = () => {
             <Image
               src="/p2.png"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -127,6 +128,7 @@ export const Carousel = () => {
             <Image
               src="/p3.png"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -136,6 +138,7 @@ export const Carousel = () => {
             <Image
               src="/p25.png"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -145,6 +148,7 @@ export const Carousel = () => {
             <Image
               src="/p24.png"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -154,6 +158,7 @@ export const Carousel = () => {
             <Image
               src="/p1.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -163,6 +168,7 @@ export const Carousel = () => {
             <Image
               src="/p16.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -172,6 +178,7 @@ export const Carousel = () => {
             <Image
               src="/p21.png"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -181,6 +188,7 @@ export const Carousel = () => {
             <Image
               src="/p23.png"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -190,6 +198,7 @@ export const Carousel = () => {
             <Image
               src="/p15.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -199,6 +208,7 @@ export const Carousel = () => {
             <Image
               src="/p14.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -208,6 +218,7 @@ export const Carousel = () => {
             <Image
               src="/p9.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -217,6 +228,7 @@ export const Carousel = () => {
             <Image
               src="/p6.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -226,6 +238,7 @@ export const Carousel = () => {
             <Image
               src="/p5.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
@@ -235,6 +248,7 @@ export const Carousel = () => {
             <Image
               src="/p4.jpg"
               alt=""
+              loading="eager"
               fill
               unoptimized
               className={styles["image"]}
