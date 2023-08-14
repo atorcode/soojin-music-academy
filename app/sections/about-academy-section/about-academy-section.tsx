@@ -41,7 +41,7 @@ export const AboutAcademySection = () => {
             Connecting Through the Language of Music
           </h2>
           <p className={styles["text"]}>
-            Soojin Music Academy, founded by Maestro Soojin Lee in 2003 as a
+            Soojin Music Academy, founded by Maestra Soojin Lee in 2003 as a
             passion project, has since flourished into an esteemed and cherished
             establishment within the Federal Way community. Our mission is to
             ignite a passion for singing and empower students on their
