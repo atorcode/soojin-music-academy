@@ -18,7 +18,7 @@ export const Marquee = () => {
         />
         <TestimonialCard
           name="Jung-soon Bae"
-          title="Student: 3 years"
+          title="Student: 2 years"
           quote="Meeting Soojin in my retirement was a stroke of luck. The feeling of basking in applause after my triumphant performance only a year into my journey was incredibly validating. Soojin's demeanor is commendable and her mentorship has become my confidence's greatest ally."
           rating={5}
           url="/t15x.png"
@@ -34,7 +34,7 @@ export const Marquee = () => {
         />
         <TestimonialCard
           name="Ok-hee Lee"
-          title="Student: 1 year"
+          title="Student: 2 years"
           quote="A little over a year ago, I took up singing lessons to address my throat hoarseness. Soojin takes such a genuine interest in the growth of her students. Her pure, passionate teaching style imbue me with great energy and vivaciousness for the rest of the week."
           rating={5}
           url="/t16.png"
@@ -42,7 +42,7 @@ export const Marquee = () => {
         />
         <TestimonialCard
           name="Hoon-suk Lee"
-          title="Student: 3 years"
+          title="Student: 2 years"
           quote="My wife convinced me to take singing lessons from Soojin. I reluctantly accepted, but I was pretty sure I was doomed to sound like a wild beast forever. However, Soojin's unwavering encouragement led to a cathartic transformation which has made my retired life so much more rewarding and enjoyable."
           rating={5}
           url="/t17.png"
@@ -75,7 +75,7 @@ export const Marquee = () => {
         />
         <TestimonialCard
           name="Jung-soon Bae"
-          title="Student: 3 years"
+          title="Student: 2 years"
           quote="Meeting Soojin in my retirement was a stroke of luck. The feeling of basking in applause after my triumphant performance only a year into my journey was incredibly validating. Soojin's demeanor is commendable and her mentorship has become my confidence's greatest ally."
           rating={5}
           url="/t15x.png"
@@ -91,7 +91,7 @@ export const Marquee = () => {
         />
         <TestimonialCard
           name="Ok-hee Lee"
-          title="Student: 1 year"
+          title="Student: 2 years"
           quote="A little over a year ago, I took up singing lessons to address my throat hoarseness. Soojin takes such a genuine interest in the growth of her students. Her pure, passionate teaching style imbue me with great energy and vivaciousness for the rest of the week."
           rating={5}
           url="/t16.png"
@@ -99,7 +99,7 @@ export const Marquee = () => {
         />
         <TestimonialCard
           name="Hoon-suk Lee"
-          title="Student: 3 years"
+          title="Student: 2 years"
           quote="My wife convinced me to take singing lessons from Soojin. I reluctantly accepted, but I was pretty sure I was doomed to sound like a wild beast forever. However, Soojin's unwavering encouragement led to a cathartic transformation which has made my retired life so much more rewarding and enjoyable."
           rating={5}
           url="/t17.png"
