@@ -8,7 +8,10 @@ import "./swiper-styles.scss";
 import Image from "next/image";
 
 // hooks
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+
+// contexts
+import { useScreenSizeContext } from "@/app/contexts/screen-size-context";
 
 // Swiper dependencies
 import "swiper/scss";
@@ -26,30 +29,11 @@ import {
 } from "swiper/modules";
 
 export const Carousel = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
+  const { screenSize } = useScreenSizeContext();
   const swiperRef = useRef<Swiper | null>(null);
 
   useEffect(() => {
-    const handleScreenSize = () => {
-      if (window.innerWidth <= 768) {
-        setIsSmallScreen(true);
-      } else {
-        setIsSmallScreen(false);
-      }
-    };
-
-    handleScreenSize();
-
-    window.addEventListener("resize", handleScreenSize);
-
-    return () => {
-      window.removeEventListener("resize", handleScreenSize);
-    };
-  }, []);
-
-  useEffect(() => {
-    // const initSwiper = () => {
-    if (isSmallScreen) {
+    if (screenSize === "small") {
       swiperRef.current?.destroy();
       swiperRef.current = new Swiper(".swiper", {
         modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
@@ -108,7 +92,7 @@ export const Carousel = () => {
         },
       });
     }
-  }, [isSmallScreen]);
+  }, [screenSize]);
 
   return (
     <article className={styles["container"]}>

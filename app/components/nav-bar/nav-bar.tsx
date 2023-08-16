@@ -14,8 +14,12 @@ import { NavLink } from "../nav-link";
 // hooks
 import { useState } from "react";
 
+// contexts
+import { useScreenSizeContext } from "@/app/contexts/screen-size-context";
+
 export const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const { screenSize } = useScreenSizeContext();
   return (
     <nav className={styles["nav"]}>
       <a href="#" className={styles["brand"]}>
@@ -23,7 +27,8 @@ export const NavBar = () => {
         <span className={styles["business-name"]}>Soojin Music Academy</span>
       </a>
       <span className={styles["links"]}>
-        <NavLink name="About" offset={100} />
+        {/* should turn these offset values into variables to ensure consistency across different navigation buttons and links */}
+        <NavLink name="About" offset={screenSize === "large" ? 100 : 0} />
         <NavLink name="Accolades" scrollTo="Resume" offset={150} />
         <NavLink name="FAQ" offset={150} />
         <NavLink name="Contact" offset={150} />
