@@ -15,10 +15,10 @@ const ScreenSizeProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const handleScreenSize = () => {
-      if (window.innerWidth <= 1280) {
-        setScreenSize("medium");
-      } else if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 768) {
         setScreenSize("small");
+      } else if (window.innerWidth <= 1280) {
+        setScreenSize("medium");
       } else {
         setScreenSize("large");
       }

@@ -29,8 +29,8 @@ import {
 } from "swiper/modules";
 
 export const Carousel = () => {
-  const { screenSize } = useScreenSizeContext();
   const swiperRef = useRef<Swiper | null>(null);
+  const { screenSize } = useScreenSizeContext();
 
   useEffect(() => {
     if (screenSize === "small") {
