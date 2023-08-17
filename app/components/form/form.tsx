@@ -55,8 +55,9 @@ export const Form = ({
   return (
     <>
       <form className={styles["form"]} onSubmit={handleSubmit}>
-        {fields.map((field) => (
+        {fields.map((field, index) => (
           <FormField
+            key={index}
             fieldType={field.fieldType}
             elementType={field.elementType}
             setIsValid={setAreFieldsValid}
