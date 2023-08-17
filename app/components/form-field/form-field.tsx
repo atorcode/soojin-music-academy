@@ -7,6 +7,7 @@ import styles from "./form-field.module.scss";
 import { useState } from "react";
 
 // types
+import { FormFieldType } from "@/app/shared-types/form-field-type";
 import { ValidityOfFields } from "@/app/shared-types/validity-of-fields";
 
 export const FormField = ({
@@ -14,7 +15,7 @@ export const FormField = ({
   fieldType,
   setIsValid,
 }: {
-  elementType?: "input" | "textarea";
+  elementType?: FormFieldType;
   fieldType: string;
   setIsValid: React.Dispatch<React.SetStateAction<ValidityOfFields>>;
 }) => {

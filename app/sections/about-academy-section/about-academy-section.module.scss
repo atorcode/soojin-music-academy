@@ -5,6 +5,11 @@
   position: relative;
   width: 100%;
   padding: v.$vertical-spacing-section 0;
+  background-color: linear-gradient(
+    150deg,
+    rgba(215, 225, 236, 1) 0%,
+    transparent 50%
+  );
   background-image: linear-gradient(
       150deg,
       rgba(215, 225, 236, 1) 0%,
@@ -111,6 +116,9 @@
 }
 
 @media (max-width: v.$screen-width-small) {
+  .section {
+    background-image: none;
+  }
   .content-wrapper {
     width: v.$content-width-mobile;
   }

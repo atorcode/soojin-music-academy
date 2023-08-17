@@ -39,7 +39,6 @@
   outline: none;
   border: none;
   border-radius: v.$border-rounded-small;
-  // background-color: pink;
   background-color: rgb(192, 192, 192);
   @include m.box-shadow-standard;
 }

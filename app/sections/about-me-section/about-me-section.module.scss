@@ -4,6 +4,7 @@
 .section {
   width: 100%;
   padding: v.$vertical-spacing-section 0;
+  background-color: black;
   background-image: url("/about-me-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +43,6 @@
   flex-direction: column;
   gap: 0.5rem;
   padding-bottom: 1rem;
-  // background-color: black;
 }
 
 .paragraph-text {
@@ -116,6 +116,9 @@
 }
 
 @media (max-width: v.$screen-width-small) {
+  .section {
+    background-image: none;
+  }
   .non-image-content {
     text-align: start;
     width: v.$content-width-mobile;
