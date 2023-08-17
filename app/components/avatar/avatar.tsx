@@ -11,6 +11,8 @@ export const Avatar = ({ name, url }: { name: string; url: string }) => {
         src={url}
         alt={`${name}'s profile photo`}
         fill
+        unoptimized
+        loading="eager"
         className={styles["image"]}
       />
     </div>

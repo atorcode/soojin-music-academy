@@ -102,9 +102,9 @@ export const Carousel = () => {
             <Image
               src="/p2.png"
               alt=""
-              loading="eager"
               fill
               unoptimized
+              loading="eager"
               className={styles["image"]}
             />
           </div>
