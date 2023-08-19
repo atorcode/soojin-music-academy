@@ -98,7 +98,7 @@ export const AboutMeSection = () => {
           <div className={styles["image-container"]}>
             <Image
               src="/about-me-profile.jpg"
-              alt=""
+              alt="Soojin at the Federal Way Performing Arts Center"
               fill
               className={styles["image"]}
             />

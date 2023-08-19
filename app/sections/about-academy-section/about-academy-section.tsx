@@ -17,7 +17,7 @@ export const AboutAcademySection = () => {
             <div className={styles["image-container"]}>
               <Image
                 src="/about-academy.jpg"
-                alt=""
+                alt="Soojin and students stand on stage with flowers."
                 fill
                 className={styles["image"]}
               />
@@ -26,9 +26,8 @@ export const AboutAcademySection = () => {
               <div className={styles["ribbon-container"]}>
                 <Image
                   src="/20-years.png"
-                  alt=""
+                  alt="20-year anniversary ribbon"
                   fill
-                  unoptimized
                   className={styles["ribbon"]}
                 />
               </div>

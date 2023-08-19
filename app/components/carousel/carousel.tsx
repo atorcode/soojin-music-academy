@@ -101,9 +101,8 @@ export const Carousel = () => {
           <div className="swiper-slide">
             <Image
               src="/p2.png"
-              alt=""
+              alt="Close-up of Soojin conducting a class"
               fill
-              unoptimized
               loading="eager"
               className={styles["image"]}
             />
@@ -111,130 +110,117 @@ export const Carousel = () => {
           <div className="swiper-slide">
             <Image
               src="/p3.png"
-              alt=""
+              alt="Soojin performing opera on stage"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p25.png"
-              alt=""
+              alt="Soojin smiling on stage after performance"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p24.png"
-              alt=""
+              alt="Soojin and students stand on stage with flowers"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p1.jpg"
-              alt=""
+              alt="Soojin posing inside of a lobby in Las Vegas"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p16.jpg"
-              alt=""
+              alt="Soojin and students gathering around a table in her home"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p21.png"
-              alt=""
+              alt="Soojin wearing a doll costume after her performance"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p23.png"
-              alt=""
+              alt="Close-up of Soojin playing the guitar"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p15.jpg"
-              alt=""
+              alt="Soojin and and her friends inside of a house in California"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p14.jpg"
-              alt=""
+              alt="Soojin and her coworkers at a convention"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p9.jpg"
-              alt=""
+              alt="Soojin posing for the camera in a green dress"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p6.jpg"
-              alt=""
+              alt="Soojin's students singing in her living room"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p5.jpg"
-              alt=""
+              alt="Soojin smiling for the camera beside a statue"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
           <div className="swiper-slide">
             <Image
               src="/p4.jpg"
-              alt=""
+              alt="Soojin's photo appearing outside of a building"
               loading="eager"
               fill
-              unoptimized
               className={styles["image"]}
             />
           </div>
