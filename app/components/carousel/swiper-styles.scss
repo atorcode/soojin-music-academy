@@ -86,16 +86,18 @@
   }
   .swiper-slide {
     height: 80vw !important;
+    scale: 0.98 !important;
   }
 }
 
 @media (max-width: v.$screen-width-small) {
   .swiper {
     width: 90vw !important;
-    height: calc(90vw + 100px) !important;
+    height: calc(90vw + 50px) !important;
   }
   .swiper-slide {
     width: 90vw !important;
+    scale: 0.96 !important;
   }
 
   .swiper-pagination {
