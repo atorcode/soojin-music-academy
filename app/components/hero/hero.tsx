@@ -4,6 +4,9 @@
 import styles from "./hero.module.scss";
 import buttonStyles from "../button/button.module.scss";
 
+// images
+import heroImage from "../../../public/hero-final.png";
+
 // components
 import Image from "next/image";
 import { Button as ReactScrollButton } from "react-scroll";
@@ -34,8 +37,9 @@ export const Hero = () => {
     <section className={styles["hero"]} id="hero">
       <div className={styles["image-container"]}>
         <Image
-          src="/hero-final.png"
+          src={heroImage}
           alt="Woman playing piano"
+          placeholder="blur"
           fill
           unoptimized
           className={styles["image"]}
