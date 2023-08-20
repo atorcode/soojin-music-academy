@@ -20,6 +20,7 @@ export const NavLink = ({
         href={`#${scrollTo}`}
         className={styles["link-hidden"]}
         aria-hidden="true"
+        tabIndex={-1}
       >
         {name}
       </a>
