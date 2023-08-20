@@ -11,6 +11,7 @@ export const Resume = () => {
         src="/soojin-lee-resume.png"
         alt="Resume for Soojin Lee"
         fill
+        sizes="1200px"
         className={styles["image"]}
       ></Image>
     </article>

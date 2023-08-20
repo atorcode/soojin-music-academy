@@ -102,8 +102,9 @@ export const Carousel = () => {
             <Image
               src="/p2.png"
               alt="Close-up of Soojin conducting a class"
-              fill
               loading="eager"
+              fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -113,6 +114,7 @@ export const Carousel = () => {
               alt="Soojin performing opera on stage"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -122,6 +124,7 @@ export const Carousel = () => {
               alt="Soojin smiling on stage after performance"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -131,6 +134,7 @@ export const Carousel = () => {
               alt="Soojin and students stand on stage with flowers"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -140,6 +144,7 @@ export const Carousel = () => {
               alt="Soojin posing inside of a lobby in Las Vegas"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -149,6 +154,7 @@ export const Carousel = () => {
               alt="Soojin and students gathering around a table in her home"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -158,6 +164,7 @@ export const Carousel = () => {
               alt="Soojin wearing a doll costume after her performance"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -167,6 +174,7 @@ export const Carousel = () => {
               alt="Close-up of Soojin playing the guitar"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -176,6 +184,7 @@ export const Carousel = () => {
               alt="Soojin and and her friends inside of a house in California"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -185,6 +194,7 @@ export const Carousel = () => {
               alt="Soojin and her coworkers at a convention"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -194,6 +204,7 @@ export const Carousel = () => {
               alt="Soojin posing for the camera in a green dress"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -203,6 +214,7 @@ export const Carousel = () => {
               alt="Soojin's students singing in her living room"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -212,6 +224,7 @@ export const Carousel = () => {
               alt="Soojin smiling for the camera beside a statue"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>
@@ -221,6 +234,7 @@ export const Carousel = () => {
               alt="Soojin's photo appearing outside of a building"
               loading="eager"
               fill
+              sizes="500px"
               className={styles["image"]}
             />
           </div>

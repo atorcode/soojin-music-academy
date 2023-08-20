@@ -100,6 +100,7 @@ export const AboutMeSection = () => {
               src="/about-me-profile.jpg"
               alt="Soojin at the Federal Way Performing Arts Center"
               fill
+              sizes="504px"
               className={styles["image"]}
             />
           </div>

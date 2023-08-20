@@ -19,6 +19,7 @@ export const AboutAcademySection = () => {
                 src="/about-academy.jpg"
                 alt="Soojin and students stand on stage with flowers."
                 fill
+                sizes="746px"
                 className={styles["image"]}
               />
             </div>
@@ -28,6 +29,7 @@ export const AboutAcademySection = () => {
                   src="/20-years.png"
                   alt="20-year anniversary ribbon"
                   fill
+                  sizes="147px"
                   className={styles["ribbon"]}
                 />
               </div>

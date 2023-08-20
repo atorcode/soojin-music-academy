@@ -42,6 +42,7 @@ export const Hero = () => {
           loading="eager"
           placeholder="blur"
           fill
+          sizes="100vw"
           unoptimized
           className={styles["image"]}
         />
