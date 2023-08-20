@@ -30,6 +30,8 @@
 
 .icon {
   transition: transform v.$transition-speed-standard ease;
+  min-width: 16px;
+  min-height: 16px;
 }
 
 .icon-rotated {

@@ -39,6 +39,7 @@ export const Hero = () => {
         <Image
           src={heroImage}
           alt="Woman playing piano"
+          loading="eager"
           placeholder="blur"
           fill
           unoptimized

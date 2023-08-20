@@ -12,6 +12,7 @@ export const HamburgerMenuButton = ({
   return (
     <button
       className={styles["button"]}
+      aria-label="menu"
       onClick={() => {
         setIsExpanded((prev) => !prev);
       }}

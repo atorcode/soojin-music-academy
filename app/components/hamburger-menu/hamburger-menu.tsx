@@ -35,7 +35,7 @@ export const HamburgerMenu = ({
       unmountOnExit
     >
       <section className={styles["menu"]} ref={menuRef}>
-        <button className={styles["button"]}>
+        <button aria-label="close" className={styles["button"]}>
           <IoClose
             className={styles["icon"]}
             onClick={() => setIsExpanded(false)}
