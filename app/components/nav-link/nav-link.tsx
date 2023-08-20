@@ -3,6 +3,7 @@ import styles from "./nav-link.module.scss";
 
 // components
 import { Link } from "react-scroll";
+// import { scroller } from "react-scroll";
 
 export const NavLink = ({
   name,
@@ -14,15 +15,24 @@ export const NavLink = ({
   offset?: number;
 }) => {
   return (
-    <Link
-      to={scrollTo}
-      spy={true}
-      smooth={true}
-      offset={offset}
-      duration={500}
-      className={styles["link"]}
-    >
-      {name}
-    </Link>
+    <>
+      <a
+        href={`#${scrollTo}`}
+        className={styles["link-hidden"]}
+        aria-hidden="true"
+      >
+        {name}
+      </a>
+      <Link
+        to={scrollTo}
+        spy={true}
+        smooth={true}
+        offset={offset}
+        duration={500}
+        className={styles["link"]}
+      >
+        {name}
+      </Link>
+    </>
   );
 };

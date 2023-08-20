@@ -16,16 +16,25 @@ export const HamburgerMenuLink = ({
   setIsExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
-    <Link
-      to={scrollTo}
-      spy={true}
-      smooth={true}
-      offset={offset}
-      duration={500}
-      className={styles["link"]}
-      onClick={() => setIsExpanded(false)}
-    >
-      {name}
-    </Link>
+    <>
+      <a
+        href={`#${scrollTo}`}
+        className={styles["link-hidden"]}
+        aria-hidden="true"
+      >
+        {name}
+      </a>
+      <Link
+        to={scrollTo}
+        spy={true}
+        smooth={true}
+        offset={offset}
+        duration={500}
+        className={styles["link"]}
+        onClick={() => setIsExpanded(false)}
+      >
+        {name}
+      </Link>
+    </>
   );
 };

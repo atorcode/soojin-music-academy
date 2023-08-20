@@ -13,3 +13,7 @@
     cursor: pointer;
   }
 }
+
+.link-hidden {
+  @include m.hidden-link;
+}

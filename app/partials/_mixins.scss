@@ -1,5 +1,13 @@
 @use "./variables" as v;
 
+// visibility
+
+@mixin hidden-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 // spacing
 
 @mixin content-wrapper-alignment {

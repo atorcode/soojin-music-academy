@@ -13,6 +13,9 @@ import { Link } from "react-scroll";
 export const Footer = () => {
   return (
     <footer className={styles["footer"]}>
+      <a href="#hero" className={styles["link-hidden"]} aria-hidden="true">
+        Scroll to top
+      </a>
       <Link
         to="hero"
         spy={true}

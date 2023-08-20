@@ -39,6 +39,10 @@
   }
 }
 
+.link-hidden {
+  @include m.hidden-link;
+}
+
 .categories {
   display: flex;
   justify-content: center;
