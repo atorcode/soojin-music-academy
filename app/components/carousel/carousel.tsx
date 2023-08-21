@@ -140,16 +140,6 @@ export const Carousel = () => {
           </div>
           <div className="swiper-slide">
             <Image
-              src="/p1.jpg"
-              alt="Soojin posing inside of a lobby in Las Vegas"
-              loading="eager"
-              fill
-              sizes="500px"
-              className={styles["image"]}
-            />
-          </div>
-          <div className="swiper-slide">
-            <Image
               src="/p16.jpg"
               alt="Soojin and students gathering around a table in her home"
               loading="eager"

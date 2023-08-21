@@ -13,7 +13,7 @@ export const FaqSection = () => {
           <div className={styles["group"]}>
             <Accordion
               title="How are you different from other music academies?"
-              content="I began my journey of mastering vocal technique about 40 years ago when I moved from South Korea to Italy to pursue a career in opera. Since then, I've had a lot of highs and lows—some good teachers and a lot of bad ones. Even today, I am still learning new things. Because the road was so difficult for me, and every step in my journey came with obstacles, I have a lot of perspective to impart on my students."
+              content="I began my journey of mastering vocal technique about 40 years ago when I moved from South Korea to Italy to pursue a career in opera. Since then, I've had a lot of highs and lows—some good teachers and a lot of bad ones. I started my own voice coaching program at Milan Conservatory to address this issue and continued teaching there for over 8 years. Even today, I am still learning new things. Because the road was so difficult for me, and every step in my journey came with obstacles, I have a lot of perspective to impart on my students."
             />
             <Accordion
               title="What genres of singing do you teach?"
