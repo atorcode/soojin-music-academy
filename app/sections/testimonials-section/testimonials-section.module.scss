@@ -1,24 +1,44 @@
 @use "../../partials/variables" as v;
+@use "../../partials/mixins" as m;
 
 .section {
   padding: 2rem 0;
+  margin-bottom: -50px;
+}
+
+.content-wrapper {
+  @include m.content-wrapper-alignment;
+  width: 100vw;
+}
+
+.button-container {
+  margin: 4rem 0;
 }
 
 @media (max-width: 1279px) {
   .section {
-    padding: 1rem 0;
+    padding-top: 1rem;
+  }
+  .button-container {
+    margin: calc(3rem - 16px) 0 3rem 0;
   }
 }
 
 @media (max-width: 1023px) {
   .section {
-    padding: 0;
+    padding-top: 0;
+  }
+  .button-container {
+    margin: calc(2.75rem - 32px) 0 2.75rem 0;
   }
 }
 
 @media (max-width: v.$screen-width-small) {
-  .section {
-    // *** This is the value that determines how much margin-top should be applied in marquee.module.scss ***
-    height: 260px;
+  // .section {
+  //   // *** This is the value that determines how much margin-top should be applied in marquee.module.scss ***
+  //   height: 260px;
+  // }
+  .button-container {
+    margin: calc(2rem - 64px) 0 2rem 0;
   }
 }

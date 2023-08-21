@@ -12,7 +12,7 @@ import { ScreenSizeProvider } from "./contexts/screen-size-context";
 export const metadata: Metadata = {
   title: "Soojin Music Academy",
   description:
-    "Discover your voice with us. Located in Federal Way, WA, our mission is to ignite a passion for singing and empower students on their individual journeys toward vocal mastery.",
+    "Discover your voice with us. Located in Federal Way, WA, our mission is to empower students on their individual journeys toward vocal mastery.",
   keywords: [
     "voice lessons",
     "singing lessons",
