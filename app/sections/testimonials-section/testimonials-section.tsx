@@ -2,10 +2,11 @@
 
 // styles
 import styles from "./testimonials-section.module.scss";
+import buttonStyles from "../../components/button/button.module.scss";
 
 // components
+import Link from "next/link";
 import { Marquee } from "@/app/components/marquee";
-import { Button } from "@/app/components/button";
 
 export const TestimonialsSection = () => {
   return (
@@ -14,7 +15,9 @@ export const TestimonialsSection = () => {
       <Marquee />
       <div className={styles["content-wrapper"]}>
         <div className={styles["button-container"]}>
-          <Button text="View More Testimonials" />
+          <Link href="/testimonials" className={buttonStyles["button"]}>
+            VIEW MORE TESTIMONIALS
+          </Link>
         </div>
       </div>
     </section>

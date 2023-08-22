@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
 // components
-import { NavBar } from "./components/nav-bar";
 import { Footer } from "./components/footer";
 
 // contexts
@@ -45,7 +44,6 @@ export default function RootLayout({
     <html lang="en" className={roboto.className}>
       <ScreenSizeProvider>
         <body>
-          <NavBar />
           {children}
           <Footer />
         </body>

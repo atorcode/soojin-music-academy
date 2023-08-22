@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <footer className={styles["footer"]}>
       <a
-        href="#hero"
+        href="#nav-bar"
         className={styles["link-hidden"]}
         aria-hidden="true"
         tabIndex={-1}
@@ -22,7 +22,7 @@ export const Footer = () => {
         Scroll to top
       </a>
       <Link
-        to="hero"
+        to="nav-bar"
         spy={true}
         smooth={true}
         duration={500}

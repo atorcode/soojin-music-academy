@@ -34,7 +34,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className={styles["hero"]} id="hero">
+    <section className={styles["hero"]}>
       <div className={styles["image-container"]}>
         <Image
           src={heroImage}

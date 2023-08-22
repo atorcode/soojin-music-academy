@@ -1,6 +1,9 @@
 // styles
 import styles from "./page.module.scss";
 
+// components
+import { NavBar } from "./components/nav-bar";
+
 // sections
 import { HeroSection } from "./sections/hero-section";
 import { AboutAcademySection } from "./sections/about-academy-section";
@@ -14,6 +17,7 @@ import { ContactMeSection } from "./sections/contact-me-section";
 export default function Home() {
   return (
     <main className={styles["main"]}>
+      <NavBar />
       <HeroSection />
       <AboutAcademySection />
       <AboutMeSection />

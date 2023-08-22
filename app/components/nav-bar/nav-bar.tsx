@@ -17,12 +17,15 @@ import { useState } from "react";
 // contexts
 import { useScreenSizeContext } from "@/app/contexts/screen-size-context";
 
-export const NavBar = () => {
+export const NavBar = ({ isSolid = false }: { isSolid?: boolean }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const { screenSize } = useScreenSizeContext();
   return (
-    <nav className={styles["nav"]}>
-      <a href="#" className={styles["brand"]}>
+    <nav
+      className={`${styles["nav"]} ${isSolid && styles["nav-solid"]}`}
+      id="nav-bar"
+    >
+      <a href="/" className={styles["brand"]}>
         <GiMusicalScore className={styles["logo"]} />
         <span className={styles["business-name"]}>Soojin Music Academy</span>
       </a>
