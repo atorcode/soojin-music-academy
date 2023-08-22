@@ -17,12 +17,12 @@ import { useState } from "react";
 // contexts
 import { useScreenSizeContext } from "@/app/contexts/screen-size-context";
 
-export const NavBar = ({ isSolid = false }: { isSolid?: boolean }) => {
+export const NavBar = ({ isInHomePage = true }: { isInHomePage?: boolean }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const { screenSize } = useScreenSizeContext();
   return (
     <nav
-      className={`${styles["nav"]} ${isSolid && styles["nav-solid"]}`}
+      className={`${styles["nav"]} ${!isInHomePage && styles["nav-solid"]}`}
       id="nav-bar"
     >
       <a href="/" className={styles["brand"]}>
@@ -31,10 +31,19 @@ export const NavBar = ({ isSolid = false }: { isSolid?: boolean }) => {
       </a>
       <span className={styles["links"]}>
         {/* should turn these offset values into variables to ensure consistency across different navigation buttons and links */}
-        <NavLink name="About" offset={screenSize === "large" ? 100 : 0} />
-        <NavLink name="Accolades" scrollTo="Resume" offset={150} />
-        <NavLink name="FAQ" offset={150} />
-        <NavLink name="Contact" offset={150} />
+        <NavLink
+          name="About"
+          offset={screenSize === "large" ? 100 : 0}
+          isInHomePage={isInHomePage}
+        />
+        <NavLink
+          name="Accolades"
+          scrollTo="Resume"
+          offset={150}
+          isInHomePage={isInHomePage}
+        />
+        <NavLink name="FAQ" offset={150} isInHomePage={isInHomePage} />
+        <NavLink name="Contact" offset={150} isInHomePage={isInHomePage} />
       </span>
       <HamburgerMenuButton setIsExpanded={setIsExpanded} />
       {/* CSSTransition's unmountOnExit will handle unmounting */}
