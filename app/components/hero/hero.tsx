@@ -14,13 +14,9 @@ import { Button as ReactScrollButton } from "react-scroll";
 // hooks
 import { useEffect, useRef, useState } from "react";
 
-// contexts
-import { useScreenSizeContext } from "@/app/contexts/screen-size-context";
-
 export const Hero = () => {
   const [hasTransitionBegun, setHasTransitionBegun] = useState<boolean>(false);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
-  const { screenSize } = useScreenSizeContext();
   useEffect(() => {
     let observer = new IntersectionObserver((entries) =>
       entries.forEach((entry) => {
@@ -69,12 +65,11 @@ export const Hero = () => {
           }`}
         >
           <ReactScrollButton
-            to="About"
+            to="about-anchor"
             value="GET STARTED"
             type="submit"
             spy={true}
             smooth={true}
-            offset={screenSize === "large" ? 100 : 0}
             duration={500}
             className={buttonStyles["button"]}
           />

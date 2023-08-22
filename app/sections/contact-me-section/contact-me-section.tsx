@@ -8,7 +8,8 @@ import { DescriptiveIconGroup } from "@/app/components/descriptive-icon-group";
 
 export const ContactMeSection = () => {
   return (
-    <section className={styles["section"]} id="Contact">
+    <section className={styles["section"]}>
+      <div className={styles["anchor"]} id="contact-anchor"></div>
       <div className={styles["content-wrapper"]}>
         <h2 className={styles["heading"]}>Embark on Your Journey Today</h2>
         <div className={styles["form-and-details"]}>

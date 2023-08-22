@@ -6,13 +6,13 @@ import { Link } from "react-scroll";
 
 export const HamburgerMenuLink = ({
   name,
-  scrollTo = name,
-  offset = 0,
+  scrollTo,
+  isInHomePage = true,
   setIsExpanded,
 }: {
   name: string;
-  scrollTo?: string;
-  offset?: number;
+  scrollTo: string;
+  isInHomePage?: boolean;
   setIsExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
@@ -25,17 +25,28 @@ export const HamburgerMenuLink = ({
       >
         {name}
       </a>
-      <Link
-        to={scrollTo}
-        spy={true}
-        smooth={true}
-        offset={offset}
-        duration={500}
-        className={styles["link"]}
-        onClick={() => setIsExpanded(false)}
-      >
-        {name}
-      </Link>
+      {isInHomePage ? (
+        <Link
+          to={scrollTo}
+          spy={true}
+          smooth={true}
+          duration={500}
+          className={styles["link"]}
+          onClick={() => setIsExpanded(false)}
+        >
+          {name}
+        </Link>
+      ) : (
+        <a
+          href={`/?target=#${scrollTo}`}
+          className={styles["link"]}
+          onClick={(e) => {
+            setIsExpanded(false);
+          }}
+        >
+          {name}
+        </a>
+      )}
     </>
   );
 };

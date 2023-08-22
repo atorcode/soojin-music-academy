@@ -65,12 +65,11 @@ export const AboutMeSection = () => {
             <div className={styles["buttons"]}>
               {isResumeDisplayed ? (
                 <ReactScrollButton
-                  to="Resume"
+                  to="resume-anchor"
                   value="VIEW RESUME"
                   type="submit"
                   spy={true}
                   smooth={true}
-                  offset={150}
                   duration={500}
                   className={`${buttonStyles["button"]}`}
                 />
@@ -85,7 +84,7 @@ export const AboutMeSection = () => {
                 </a>
               )}
               <ReactScrollButton
-                to="Testimonials"
+                to="testimonials-anchor"
                 value="LEARN MORE"
                 type="submit"
                 spy={true}

@@ -10,7 +10,8 @@ import { Button as ReactScrollButton } from "react-scroll";
 
 export const AboutAcademySection = () => {
   return (
-    <section className={styles["section"]} id="About">
+    <section className={styles["section"]}>
+      <div className={styles["anchor"]} id="about-anchor"></div>
       <div className={styles["content-wrapper"]}>
         <div className={styles["content-and-ribbon"]}>
           <div className={styles["image-group"]}>
@@ -56,12 +57,11 @@ export const AboutAcademySection = () => {
             celebrating the transformative power of music!
           </p>
           <ReactScrollButton
-            to="Contact"
+            to="contact-anchor"
             value="BOOK YOUR FIRST LESSON"
             type="submit"
             spy={true}
             smooth={true}
-            offset={150}
             duration={500}
             className={buttonStyles["button"]}
           />

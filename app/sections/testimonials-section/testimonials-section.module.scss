@@ -2,6 +2,7 @@
 @use "../../partials/mixins" as m;
 
 .section {
+  position: relative;
   padding: 2rem 0;
   margin-bottom: -50px;
 }
@@ -9,6 +10,11 @@
 .content-wrapper {
   @include m.content-wrapper-alignment;
   width: 100vw;
+}
+
+.anchor {
+  position: absolute;
+  top: 0px;
 }
 
 .button-container {

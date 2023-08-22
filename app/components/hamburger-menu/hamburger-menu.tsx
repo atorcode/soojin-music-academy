@@ -14,9 +14,11 @@ import { CSSTransition } from "react-transition-group";
 import { HamburgerMenuLink } from "../hamburger-menu-link";
 
 export const HamburgerMenu = ({
+  isInHomePage = true,
   isExpanded,
   setIsExpanded,
 }: {
+  isInHomePage: boolean;
   isExpanded: boolean;
   setIsExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
@@ -42,24 +44,34 @@ export const HamburgerMenu = ({
           />
         </button>
         <div className={styles["links"]}>
-          <HamburgerMenuLink name="About" setIsExpanded={setIsExpanded} />
+          <HamburgerMenuLink
+            name="About"
+            scrollTo="about-anchor"
+            isInHomePage={isInHomePage}
+            setIsExpanded={setIsExpanded}
+          />
           <HamburgerMenuLink
             name="Gallery"
-            offset={50}
+            scrollTo="gallery-anchor"
+            isInHomePage={isInHomePage}
             setIsExpanded={setIsExpanded}
           />
           <HamburgerMenuLink
             name="Testimonials"
+            scrollTo="testimonials-anchor"
+            isInHomePage={isInHomePage}
             setIsExpanded={setIsExpanded}
           />
           <HamburgerMenuLink
             name="FAQ"
-            offset={150}
+            scrollTo="FAQ-anchor"
+            isInHomePage={isInHomePage}
             setIsExpanded={setIsExpanded}
           />
           <HamburgerMenuLink
             name="Contact"
-            offset={150}
+            scrollTo="contact-anchor"
+            isInHomePage={isInHomePage}
             setIsExpanded={setIsExpanded}
           />
         </div>

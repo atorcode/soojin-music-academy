@@ -6,13 +6,11 @@ import { Link } from "react-scroll";
 
 export const NavLink = ({
   name,
-  scrollTo = name,
-  offset = 0,
+  scrollTo,
   isInHomePage,
 }: {
   name: string;
-  scrollTo?: string;
-  offset?: number;
+  scrollTo: string;
   isInHomePage: boolean;
 }) => {
   return (
@@ -30,7 +28,6 @@ export const NavLink = ({
           to={scrollTo}
           spy={true}
           smooth={true}
-          offset={offset}
           duration={500}
           className={styles["link"]}
         >

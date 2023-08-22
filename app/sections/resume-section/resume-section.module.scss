@@ -2,12 +2,18 @@
 @use "../../partials/mixins" as m;
 
 .section {
+  position: relative;
   width: 100%;
   padding: v.$vertical-spacing-section 0;
   background-color: white;
   @include m.wavy-divider;
   margin-top: -72px;
   background-image: linear-gradient(200deg, #ffffff 0%, rgb(80, 80, 80) 74%);
+}
+
+.anchor {
+  position: absolute;
+  top: 150px;
 }
 
 .content-wrapper {

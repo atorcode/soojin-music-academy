@@ -2,6 +2,7 @@
 @use "../../partials/mixins" as m;
 
 .section {
+  position: relative;
   width: 100%;
   padding: v.$vertical-spacing-section 0;
   margin-top: -72px;
@@ -16,6 +17,11 @@
   align-items: center;
   width: v.$content-width;
   margin: auto;
+}
+
+.anchor {
+  position: absolute;
+  top: 130px;
 }
 
 .content {
