@@ -1,3 +1,5 @@
+@use "../../partials/variables" as v;
+
 .testimonials-article {
   display: flex;
   flex-direction: column;
@@ -10,11 +12,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: min-content;
-  // display: flex;
-  // justify-content: flex-start;
-  // flex-wrap: wrap;
-  // left: 50%;
-  // transform: translateX(50%);
   gap: 2rem;
   padding: 0 1rem;
 
@@ -43,4 +40,66 @@
 
 .small-font {
   font-size: 0.9rem;
+}
+
+@media (max-width: 1650px) {
+  .testimonials-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .testimonials-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: v.$screen-width-small) {
+  .testimonials-article {
+    padding-top: 9rem;
+    // very unideal way of adjusting the height of the article (which is a consequence of choosing to use transform: scale on testimonials-section to change the size of each testimonial card). A better approach would be to let the card handle its own sizing dynamically, but this must be revisted since the same testimonial-card component is being used in a marquee.
+    height: 6250px;
+  }
+  .testimonials-section {
+    transform-origin: top;
+    transform: scale(0.8);
+  }
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 1.33rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-article {
+    height: 5500px;
+  }
+
+  .testimonials-section {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 400px) {
+  .testimonials-article {
+    height: 4760px;
+  }
+
+  .testimonials-section {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 340px) {
+  .testimonials-article {
+    height: 4680px;
+  }
+
+  .testimonials-section {
+    transform: scale(0.59);
+  }
 }

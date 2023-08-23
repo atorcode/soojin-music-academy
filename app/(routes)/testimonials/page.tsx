@@ -89,7 +89,7 @@ export default function Testimonials() {
             name="Hae-won Chun"
             title="Student: 3 years"
             quote="I Always wanted to sing, but only pursued it post-retirement. My soft voice was limiting, and I could only sing falsetto. Soojin changed that. Through her, I developed a pro-level vocal resonance—an accomplishment that brings me immense joy. Her meticulously tailored lessons are perfect for amateurs!"
-            rating={4.5}
+            rating={5}
             url="/t3a.png"
             color="#FDFD96"
           />
@@ -98,7 +98,7 @@ export default function Testimonials() {
               name="Hyun-kyung Kim"
               title="Student: 4 years"
               quote="I come from a background in piano, and I knew I wanted to learn singing. I was introduced to Soojin and was shocked at how quickly I progressed in my development. Learning the Bel Canto method properly, I gained control over my volume and improved my diction. Under Soojin’s teaching, my goal is to expand my repertoire to include many opera arias."
-              rating={4.5}
+              rating={5}
               url="/t5a.png"
               color="#DF7371"
             />
@@ -107,7 +107,7 @@ export default function Testimonials() {
             name="Yeon-ok Kim"
             title="Student: 8 years"
             quote="If I had to sum up Soojin's teaching style in a phrase, I would say she's enthusiastic and detail-oriented. Her profound dedication to her students' growth is clear from her actions, and she's always a pleasure to be around as a person. As soon as the pandemic ended, one of the first things I did was to resume our lessons."
-            rating={4.5}
+            rating={5}
             url="/t6x.png"
             color="pink"
           />
@@ -116,7 +116,7 @@ export default function Testimonials() {
               name="In-sook Lee"
               title="Student: 8 years"
               quote="Just because you're great at singing doesn't make you a good teacher. Soojin is an exception. She has an impressive background of learning, performing, and teaching in Italy. I sang as a soprano soloist in my church choir, and Soojin's teachings have been incredibly helpful. I’m grateful for her unwavering passion and devotion for imparting her wisdom on those who are less musically talented than her."
-              rating={4.5}
+              rating={5}
               url="/t7x.png"
               color="violet"
             />
@@ -126,7 +126,7 @@ export default function Testimonials() {
               name="Mi-won Park"
               title="Choir member: 5 years"
               quote="I've known Soojin for over 25 years. Currently, I’m a member of my own church choir and the Bel Canto Choir led by Soojin. The church I belong to has a conductor with an extensive background in singing who vouches for Soojin and tells all our choir members to seek Soojin’s voice lessons. Soojin’s achievements speak for themselves and she’s clearly a foundational piece in our musical community."
-              rating={4.5}
+              rating={5}
               url="/t19x.png"
               color="orange"
             />
@@ -135,7 +135,7 @@ export default function Testimonials() {
             name="Eun-kyung Choi"
             title="Choir member: 5 years"
             quote="Soojin teaches with passion and diligence...with all her soul. More than anything, her personality and warm heart stand out as her greatest qualities. Her ability to empathize and connect with others is truly remarkable. I'm proud to call her my best friend."
-            rating={4.5}
+            rating={5}
             url="/t9.png"
             color="#A2E4B8"
           />
@@ -151,7 +151,7 @@ export default function Testimonials() {
             name="Jung-sook Woo"
             title="Student: 6 years"
             quote="Once upon a time, I had huge misunderstandings about the breathing technique involved in singing. After learning from Soojin for a couple years, I felt connected to my breath in a major way. My diction problems were fixed, and she gave me the fundamentals I needed to continue learning independently."
-            rating={4.5}
+            rating={4}
             url="/t11.jpg"
             color="#FDFD96"
           />
@@ -185,7 +185,7 @@ export default function Testimonials() {
             name="Tae-eun Son"
             title="Student: 2 years"
             quote="I think Ms. Lee is an absolutely wonderful teacher! I love how she always tries her best to help me improve at piano. She makes sure to give important feedback all the time. She is very talented and kind! I believe that it is such an honor to be a student of hers."
-            rating={4.5}
+            rating={5}
             url="/default-woman-img.png"
             color="orange"
           />
