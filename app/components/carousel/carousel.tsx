@@ -180,8 +180,8 @@ export const Carousel = () => {
           </div>
           <div className="swiper-slide">
             <Image
-              src="/p14.jpg"
-              alt="Soojin and her coworkers at a convention"
+              src="/p31x.png"
+              alt="A plaque of Bel Canto Chorus' annual concert at the Federal Way Performing Arts Center"
               loading="eager"
               fill
               sizes="500px"
