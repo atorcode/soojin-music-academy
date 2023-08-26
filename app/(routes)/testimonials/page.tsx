@@ -125,7 +125,7 @@ export default function Testimonials() {
             <TestimonialCard
               name="Mi-won Park"
               title="Choir member: 5 years"
-              quote="I've known Soojin for over 25 years. Currently, I’m a member of my own church choir and the Bel Canto Choir led by Soojin. The church I belong to has a conductor with an extensive background in singing who vouches for Soojin and tells all our choir members to seek Soojin’s voice lessons. Soojin’s achievements speak for themselves and she’s clearly a foundational piece in our musical community."
+              quote="I've known Soojin for over 25 years. Currently, I’m a member of my own church choir and the Bel Canto Choir led by Soojin. The church I belong to has a conductor with an extensive background in singing who vouches for Soojin and has told a few of our choir members to take lessons from Soojin. Soojin’s achievements speak for themselves and she’s clearly a foundational piece in our musical community."
               rating={5}
               url="/t19x.png"
               color="orange"
