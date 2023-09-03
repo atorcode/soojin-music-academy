@@ -120,6 +120,16 @@ export const Carousel = () => {
           </div>
           <div className="swiper-slide">
             <Image
+              src="/p1.jpg"
+              alt="Soojin posing with her arms in the air"
+              loading="eager"
+              fill
+              sizes="500px"
+              className={styles["image"]}
+            />
+          </div>
+          <div className="swiper-slide">
+            <Image
               src="/p25.png"
               alt="Soojin smiling on stage after performance"
               loading="eager"
