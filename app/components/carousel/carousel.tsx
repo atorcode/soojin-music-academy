@@ -170,6 +170,26 @@ export const Carousel = () => {
           </div>
           <div className="swiper-slide">
             <Image
+              src="/p32.jpg"
+              alt="Television broadcast of Soojin conducting Bel Canto Chorus"
+              loading="eager"
+              fill
+              sizes="500px"
+              className={styles["image"]}
+            />
+          </div>
+          <div className="swiper-slide">
+            <Image
+              src="/p33.jpg"
+              alt="Aerial view of Soojin conducting Bel Canto Chorus"
+              loading="eager"
+              fill
+              sizes="500px"
+              className={styles["image"]}
+            />
+          </div>
+          <div className="swiper-slide">
+            <Image
               src="/p23.png"
               alt="Close-up of Soojin playing the guitar"
               loading="eager"
